@@ -1,0 +1,14 @@
+<div ng-init="allBrands()">
+
+	<table class="table table-bordered tableBG" border="1">
+		<tbody>
+			<tr>
+				<th>Name</th>
+			</tr>
+			<tr ng-repeat="brand in brands">
+				<td><a ng-click="findModels(brand.name)">{{brand.name}}</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>
