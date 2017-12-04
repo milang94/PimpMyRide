@@ -20,9 +20,15 @@ public class CarServiceImplementation implements CarService {
 	}
 
 	@Override
-	public List<String> findAllBuildYearss(String brandName, String modelName) {
+	public List<String> findAllBuildYears(String brandName, String modelName) {
 		// TODO Auto-generated method stub
 		return carRep.findAllBuildYears(brandName, modelName);
+	}
+
+	@Override
+	public List<String> findMotorTypes(String brandName, String modelName, String year) {
+		// TODO Auto-generated method stub
+		return carRep.findMotorTypes(brandName, modelName, year);
 	}
 
 }

@@ -19,6 +19,11 @@ angular.module('routerApp', [ 'ui.router', 'services', 'controllers' ]).config(
 				url : '/buildYears',
 				templateUrl : 'pages/buildYears.html',
 				controller : 'controller'
+			}).state('models.buildYears.motorTypes', {
+				url : '/motorTypes',
+				templateUrl : 'pages/motorTypes.html',
+				controller : 'controller'
 			})
+			
 
 		});

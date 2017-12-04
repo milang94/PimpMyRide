@@ -19,4 +19,9 @@ services.service('service', [
 						+ "/" + modelName);
 			}
 
+			this.findMotorType = function(year,modelName, brandName) {
+				return $http.get("/controller/getMotorTypes/" + brandName
+						+ "/" + modelName + "/" + year);
+			}
+			
 		} ]);

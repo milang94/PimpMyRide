@@ -1,13 +1,14 @@
-<table class="table table-bordered tableBG" border="1">
+<div><table class="table table-bordered tableBG" border="1">
 	<tbody>
 		<tr>
-			<th>Name</th>
+			<th>{{brand}}</th>
 		</tr>
 		<tr ng-repeat="m in models">
 			<td><a ng-click="findBuildYears(m)">{{m}}</a></td>
 		</tr>
 	</tbody>
 </table>
+</div>
 
 <div ui-view></div>
 

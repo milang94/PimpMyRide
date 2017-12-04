@@ -6,6 +6,8 @@ public interface CarService {
 
 	List<String> findAllModels(String brandName);
 
-	List<String> findAllBuildYearss(String brandName, String modelName);
+	List<String> findAllBuildYears(String brandName, String modelName);
+
+	List<String> findMotorTypes(String brandName, String modelName, String year);
 
 }

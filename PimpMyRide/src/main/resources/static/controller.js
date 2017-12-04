@@ -25,7 +25,17 @@ app.controller('controller', [
 				service.findBuildYears(modelName, $rootScope.brand).then(
 						function(response) {
 							$rootScope.buildYears = response.data;
+							$rootScope.model = modelName;
 							$location.path('/models/buildYears');
+						});
+			}
+			
+			$scope.findMotorType = function(year) {
+				service.findMotorType(year, $rootScope.model,$rootScope.brand).then(
+						function(response) {
+							$rootScope.motorTypes = response.data;
+							$rootScope.yearr = year;
+							$location.path('/models/buildYears/motorTypes');
 						});
 			}
 

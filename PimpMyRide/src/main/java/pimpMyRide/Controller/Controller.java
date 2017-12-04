@@ -39,6 +39,11 @@ public class Controller {
 
 	@GetMapping("/getAllBuildYears/{brandName}/{modelName}")
 	public ResponseEntity<List<String>> allBuildYears(@PathVariable String brandName, @PathVariable String modelName) {
-		return new ResponseEntity<>(carService.findAllBuildYearss(brandName, modelName), HttpStatus.OK);
+		return new ResponseEntity<>(carService.findAllBuildYears(brandName, modelName), HttpStatus.OK);
+	}
+	
+	@GetMapping("/getMotorTypes/{brandName}/{modelName}/{year}")
+	public ResponseEntity<List<String>> allBuildYears(@PathVariable String brandName, @PathVariable String modelName, @PathVariable String year) {
+		return new ResponseEntity<>(carService.findMotorTypes(brandName, modelName, year), HttpStatus.OK);
 	}
 }
