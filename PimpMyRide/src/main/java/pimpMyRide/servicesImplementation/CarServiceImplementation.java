@@ -26,7 +26,7 @@ public class CarServiceImplementation implements CarService {
 	}
 
 	@Override
-	public List<String> findMotorTypes(String brandName, String modelName, String year) {
+	public List<Object[]> findMotorTypes(String brandName, String modelName, String year) {
 		// TODO Auto-generated method stub
 		return carRep.findMotorTypes(brandName, modelName, year);
 	}

@@ -34,7 +34,15 @@ app.controller('controller', [
 			$scope.findMotorType = function(year) {
 				service.findMotorType(year, $rootScope.model, $rootScope.brand)
 						.then(function(response) {
-							$rootScope.motorTypes = response.data;
+							$rootScope.motorTypes1 = [];
+							$rootScope.motorTypes2 = [];
+							for(var i = 0 ; i<response.data.length; i+=1){
+								if(response.data[i][1] == "Benzin"){
+									$rootScope.motorTypes1.push(response.data[i]);
+								} else {
+									$rootScope.motorTypes2.push(response.data[i])
+								}
+							}
 							$rootScope.yearr = year;
 							$location.path('/models/buildYears/motorTypes');
 						});

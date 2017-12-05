@@ -8,6 +8,6 @@ public interface CarService {
 
 	List<String> findAllBuildYears(String brandName, String modelName);
 
-	List<String> findMotorTypes(String brandName, String modelName, String year);
+	List<Object[]> findMotorTypes(String brandName, String modelName, String year);
 
 }
