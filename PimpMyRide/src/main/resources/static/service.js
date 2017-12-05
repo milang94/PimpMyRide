@@ -1,4 +1,4 @@
-var services = angular.module('services', [ 'ngResource' ]);
+var services = angular.module('services', [ 'ngResource', 'ngSanitize' ]);
 
 var baseUrl = 'http://localhost\\:8080';
 

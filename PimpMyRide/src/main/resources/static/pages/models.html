@@ -1,16 +1,43 @@
-<div><table class="table table-bordered tableBG" border="1">
-	<tbody>
-		<tr>
-			<th>{{brand}}</th>
-		</tr>
-		<tr ng-repeat="m in models">
-			<td><a ng-click="findBuildYears(m)">{{m}}</a></td>
-		</tr>
-	</tbody>
-</table>
-</div>
+<section class="row title">
+	<div class="twentyfour columns nopadding group">
+		<h1>Chiptuning</h1>
+		<h2>Cars</h2>
+		<h3>{{brand}}</h3>
+		<div ng-bind-html="myText"></div>
 
-<div ui-view></div>
+	</div>
+</section>
+<section class="row sub">
+	<div class="twentyfour columns">
+		<div class="back">
+			<a href="chiptuning/1-cars/" class="button-full-rounded">brand
+				overview</a>
+		</div>
+		<span class="title">Choose a model ...</span>
+	</div>
+</section>
+
+<section class="row main">
+	<div class="twentyfour columns bigpadding">
+		<ul class="block-grid three-up mobile-one-up articles list">
+			<li>
+				<article>
+					<header>
+						<h2>{{brand}}</h2>
+						<img src="../db/pictures/original/4.png" width="50" height="50"
+							alt="{{brand.name}}" class="logo">
+					</header>
+					<ul class="content" ng-repeat="m in models">
+						<li><a ng-click="findBuildYears(m)">{{m}}</a></li>
+					</ul>
+				</article>
+			</li>
+			<div ui-view></div>
+		</ul>
+
+	</div>
+</section>
+
 
 
 
