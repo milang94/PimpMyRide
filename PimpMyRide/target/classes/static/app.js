@@ -24,6 +24,5 @@ angular.module('routerApp', [ 'ui.router', 'services', 'controllers' ]).config(
 				templateUrl : 'pages/motorTypes.html',
 				controller : 'controller'
 			})
-			
 
 		});

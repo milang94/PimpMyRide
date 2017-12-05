@@ -25,19 +25,17 @@
 					<header>
 						<h2>{{brand}}</h2>
 						<img src="../db/pictures/original/4.png" width="50" height="50"
-							alt="{{brand.name}}" class="logo">
+							class="logo">
 					</header>
 					<ul class="content" ng-repeat="m in models">
 						<li><a ng-click="findBuildYears(m)">{{m}}</a></li>
 					</ul>
 				</article>
 			</li>
-			<div ui-view></div>
+			<ui-view></ui-view>
 		</ul>
-
 	</div>
+
+
 </section>
-
-
-
 
