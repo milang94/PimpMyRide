@@ -47,5 +47,13 @@ app.controller('controller', [
 							$location.path('/models/buildYears/motorTypes');
 						});
 			}
+			
+			$scope.allInformations = function(mt) {
+				service.allInformations($rootScope.brand, $rootScope.model, $rootScope.yearr, mt[0],mt[1],mt[2]).then(
+						function(response) {
+							$rootScope.car = response.data;							
+							$location.path('/allInformations');
+						});
+			}
 
 		} ]);

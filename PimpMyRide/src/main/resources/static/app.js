@@ -23,6 +23,10 @@ angular.module('routerApp', [ 'ui.router', 'services', 'controllers' ]).config(
 				url : '/motorTypes',
 				templateUrl : 'pages/motorTypes.html',
 				controller : 'controller'
+			}).state('/allInformations', {
+				url : '/allInformations',
+				templateUrl : 'pages/allInformations.html',
+				controller : 'controller'
 			})
 
 		});

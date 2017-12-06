@@ -19,9 +19,16 @@ services.service('service', [
 						+ "/" + modelName);
 			}
 
-			this.findMotorType = function(year,modelName, brandName) {
-				return $http.get("/controller/getMotorTypes/" + brandName
-						+ "/" + modelName + "/" + year);
+			this.findMotorType = function(year, modelName, brandName) {
+				return $http.get("/controller/getMotorTypes/" + brandName + "/"
+						+ year + "/" + modelName);
 			}
-			
+
+			this.allInformations = function(brand, model, year, motortype,
+					fuel, opower) {
+				return $http.get("/controller/getAllInformations/" + brand
+						+ "/" + model + "/" + year + "/" + motortype + "/"
+						+ fuel + "/" + opower);
+			}
+
 		} ]);

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import pimpMyRide.model.Brand;
+import pimpMyRide.model.Car;
 import pimpMyRide.services.BrandService;
 import pimpMyRide.services.CarService;
 
@@ -42,8 +43,13 @@ public class Controller {
 		return new ResponseEntity<>(carService.findAllBuildYears(brandName, modelName), HttpStatus.OK);
 	}
 	
-	@GetMapping("/getMotorTypes/{brandName}/{modelName}/{year}")
-	public ResponseEntity<List<Object[]>> allBuildYears(@PathVariable String brandName, @PathVariable String modelName, @PathVariable String year) {
+	@GetMapping("/getMotorTypes/{brandName}/{year}/{modelName}")
+	public ResponseEntity<List<Object[]>> allMotorTypes(@PathVariable String brandName, @PathVariable String year, @PathVariable String modelName) {
 		return new ResponseEntity<>(carService.findMotorTypes(brandName, modelName, year), HttpStatus.OK);
+	}
+	
+	@GetMapping("/getAllInformations/{brandName}/{modelName}/{year}/{motortype}/{fuel}/{opower}")
+	public ResponseEntity<List<Car>> allInformations(@PathVariable String brandName, @PathVariable String modelName, @PathVariable String year, @PathVariable String motortype, @PathVariable String fuel, @PathVariable String opower) {
+		return new ResponseEntity<>(carService.findByBrandAndModelAndBuildyearAndMotortypeAndFuelAndOpower(brandName, modelName, year, motortype, fuel, opower), HttpStatus.OK);
 	}
 }
