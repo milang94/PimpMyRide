@@ -12,6 +12,6 @@ public interface CarService {
 
 	List<Object[]> findMotorTypes(String brandName, String modelName, String year);
 	
-	List<Car> findByBrandAndModelAndBuildyearAndMotortypeAndFuelAndOpower(String brand, String model, String year, String motortype, String fuel, String opower);
+	Car findByBrandAndModelAndBuildyearAndMotortypeAndFuelAndOpower(String brand, String model, String year, String motortype, String fuel, String opower);
 
 }

@@ -33,7 +33,7 @@ public class CarServiceImplementation implements CarService {
 	}
 
 	@Override
-	public List<Car> findByBrandAndModelAndBuildyearAndMotortypeAndFuelAndOpower(String brand, String model,
+	public Car findByBrandAndModelAndBuildyearAndMotortypeAndFuelAndOpower(String brand, String model,
 			String year, String motortype, String fuel, String opower) {
 		// TODO Auto-generated method stub
 		return carRep.findByBrandAndModelAndBuildyearAndMotortypeAndFuelAndOpower(brand, model, year, motortype, fuel, opower);

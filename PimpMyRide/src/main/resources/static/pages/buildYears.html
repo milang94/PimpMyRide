@@ -1,3 +1,4 @@
+<div ng-init = "info2()">
 <li style="float: left; width: 33.33%"><article>
 		<header>
 			<h2>{{model}}</h2>
@@ -5,8 +6,9 @@
 			 class="logo hide-for-medium-down">
 		</header>
 		<ul class="content" ng-repeat="y in buildYears">
-			<li><a ng-click="findMotorType(y)" title="Alpina D3 All">{{y}}</a></li>
+			<li><a ng-click="findMotorType(y)" >{{y}}</a></li>
 		</ul>
 
 	</article></li>
 <ui-view></ui-view>
+</div>

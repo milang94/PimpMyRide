@@ -40,6 +40,7 @@ public class Controller {
 
 	@GetMapping("/getAllBuildYears/{brandName}/{modelName}")
 	public ResponseEntity<List<String>> allBuildYears(@PathVariable String brandName, @PathVariable String modelName) {
+		System.out.println("aaaaaaaa   "+modelName);
 		return new ResponseEntity<>(carService.findAllBuildYears(brandName, modelName), HttpStatus.OK);
 	}
 	
@@ -49,7 +50,7 @@ public class Controller {
 	}
 	
 	@GetMapping("/getAllInformations/{brandName}/{modelName}/{year}/{motortype}/{fuel}/{opower}")
-	public ResponseEntity<List<Car>> allInformations(@PathVariable String brandName, @PathVariable String modelName, @PathVariable String year, @PathVariable String motortype, @PathVariable String fuel, @PathVariable String opower) {
+	public ResponseEntity<Car> allInformations(@PathVariable String brandName, @PathVariable String modelName, @PathVariable String year, @PathVariable String motortype, @PathVariable String fuel, @PathVariable String opower) {
 		return new ResponseEntity<>(carService.findByBrandAndModelAndBuildyearAndMotortypeAndFuelAndOpower(brandName, modelName, year, motortype, fuel, opower), HttpStatus.OK);
 	}
 }

@@ -20,5 +20,5 @@ public interface CarRepository extends JpaRepository<Car, Long> {
 	@Query("select motortype,fuel,opower from Car where brand= ?1 and model= ?2 and buildyear= ?3")
 	List<Object[]> findMotorTypes(String brandName, String modelName, String year);
 	
-	List<Car> findByBrandAndModelAndBuildyearAndMotortypeAndFuelAndOpower(String brand, String model, String year, String motortype, String fuel, String opower);
+	Car findByBrandAndModelAndBuildyearAndMotortypeAndFuelAndOpower(String brand, String model, String year, String motortype, String fuel, String opower);
 }
