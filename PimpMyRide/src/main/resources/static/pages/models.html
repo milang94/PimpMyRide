@@ -1,42 +1,34 @@
-<div ng-init = "info3()">
-<section class="row title" style="width: 100%">
-	<div class="twentyfour columns nopadding group">
-		<h1>Chiptuning</h1>
-		<h2>Cars</h2>
-		<h3>{{brand}}</h3>
-		<div ng-bind-html="myText"></div>
+<div ng-init="info3()">
 
-	</div>
-</section>
-<section class="row sub" style="width: 100%">
-	<div class="twentyfour columns">
-		<div class="back">
-			<a href="chiptuning/1-cars/" class="button-full-rounded">brand
-				overview</a>
+	<section class="row sub" style="width: 100%">
+		<div class="twentyfour columns">
+			<div class="back">
+				<a href="chiptuning/1-cars/" class="button-full-rounded">brand
+					overview</a>
+			</div>
+			<span class="title">Choose a model ...</span>
 		</div>
-		<span class="title">Choose a model ...</span>
-	</div>
-</section>
+	</section>
 
-<section class="row main" style="width: 100%">
-	<div class="twentyfour columns bigpadding">
-		<ul class="block-grid three-up mobile-one-up articles list">
-			<li>
-				<article>
-					<header>
-						<h2>{{brand}}</h2>
-						<img src="../db/pictures/original/4.png" width="50" height="50"
-							class="logo">
-					</header>
-					<ul class="content" ng-repeat="m in models">
-						<li><a ng-click="findBuildYears(m)">{{m}}</a></li>
-					</ul>
-				</article>
-			</li>
-			<ui-view></ui-view>
-		</ul>
-	</div>
+	<section class="row main" style="width: 100%">
+		<div class="twentyfour columns bigpadding">
+			<ul class="block-grid three-up mobile-one-up articles list">
+				<li>
+					<article>
+						<header>
+							<h2>{{brand}}</h2>
+							<img src="../db/pictures/original/4.png" width="50" height="50"
+								class="logo">
+						</header>
+						<ul class="content" ng-repeat="m in models">
+							<li><a ng-click="findBuildYears(m)">{{m}}</a></li>
+						</ul>
+					</article>
+				</li>
+				<ui-view></ui-view>
+			</ul>
+		</div>
 
 
-</section>
+	</section>
 </div>
