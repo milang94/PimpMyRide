@@ -48,7 +48,47 @@ angular.module('routerApp', [ 'ui.router', 'services', 'controllers' ]).config(
 						templateUrl : 'pages/stageTable2.html'
 					},
 					'graph' : {
-						templateUrl : 'pages/stageTable2.html'
+						templateUrl : 'pages/stageGraph2.html'
+					}
+				}
+			}).state('navBar.allInformations.stage3', {
+				url : '/stage3',
+				views : {
+					'tableData' : {
+						templateUrl : 'pages/stageTable3.html'
+					},
+					'graph' : {
+						templateUrl : 'pages/stageGraph3.html'
+					}
+				}
+			}).state('navBar.allInformations.stage4', {
+				url : '/stage4',
+				views : {
+					'tableData' : {
+						templateUrl : 'pages/stageTable4.html'
+					},
+					'graph' : {
+						templateUrl : 'pages/stageGraph4.html'
+					}
+				}
+			}).state('navBar.allInformations.dsg6', {
+				url : '/dsg6',
+				views : {
+					'tableData' : {
+						templateUrl : 'pages/dsg6Table.html'
+					},
+					'graph' : {
+						templateUrl : 'pages/dsg6Video.html'
+					}
+				}
+			}).state('navBar.allInformations.eco', {
+				url : '/eco',
+				views : {
+					'tableData' : {
+						templateUrl : 'pages/ecoTable.html'
+					},
+					'graph' : {
+						templateUrl : 'pages/ecoDescription.html'
 					}
 				}
 			})
