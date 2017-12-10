@@ -10,21 +10,21 @@
 			</tr>
 			<tr>
 				<th scope="row">Launch control</th>
-				<td>2000 rpm</td>
-				<td class="highlight">2400 rpm</td>
-				<td class="highlight">2600 rpm</td>
+				<td>{{car.dolcontrol}}</td>
+				<td class="highlight">{{car.ds1lcontrol}}</td>
+				<td class="highlight">{{car.ds2lcontrol}}</td>
 			</tr>
 			<tr>
 				<th scope="row">RPM limit</th>
-				<td>4800 rpm</td>
-				<td class="highlight">4500 rpm</td>
-				<td class="highlight">4600 rpm</td>
+				<td>{{car.dorpmlimit}}</td>
+				<td class="highlight">{{car.ds1rpmlimit}}</td>
+				<td class="highlight">{{car.ds2rpmlimit}}</td>
 			</tr>
 			<tr>
 				<th scope="row">Shift time</th>
-				<td>100 ms</td>
-				<td class="highlight">90 ms</td>
-				<td class="highlight">80 ms</td>
+				<td>{{car.dostime}}</td>
+				<td class="highlight">{{car.ds1stime}}</td>
+				<td class="highlight">{{car.ds2stime}}</td>
 			</tr>
 			<tr>
 				<td colspan="2" class="noborder">
@@ -34,8 +34,8 @@
 							class="popup">Payment options</a>
 					</div>
 				</td>
-				<td class="price">€ 300</td>
-				<td class="price">€ 400</td>
+				<td class="price">{{car.ds1price}}</td>
+				<td class="price">{{car.ds2price}}</td>
 			</tr>
 		</tbody>
 	</table>

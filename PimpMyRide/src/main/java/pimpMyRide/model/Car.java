@@ -36,9 +36,9 @@ public class Car {
 	@Column
 	private String s1torque;
 	@Column
-	private String ds1power;
+	private String s1dpower;
 	@Column
-	private String ds1torque;
+	private String s1dtorque;
 	@Column
 	private String s1price;
 	@Column
@@ -179,20 +179,20 @@ public class Car {
 		this.s1torque = s1torque;
 	}
 
-	public String getDs1power() {
-		return ds1power;
+	public String getS1dpower() {
+		return s1dpower;
 	}
 
-	public void setDs1power(String ds1power) {
-		this.ds1power = ds1power;
+	public void setS1dpower(String s1dpower) {
+		this.s1dpower = s1dpower;
 	}
 
-	public String getDs1torque() {
-		return ds1torque;
+	public String getS1dtorque() {
+		return s1dtorque;
 	}
 
-	public void setDs1torque(String ds1torque) {
-		this.ds1torque = ds1torque;
+	public void setS1dtorque(String s1dtorque) {
+		this.s1dtorque = s1dtorque;
 	}
 
 	public String getS1price() {

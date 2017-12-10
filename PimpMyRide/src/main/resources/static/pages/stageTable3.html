@@ -11,19 +11,17 @@
 			</tr>
 			<tr>
 				<th scope="row">Power</th>
-				<td>265 hp</td>
+				<td>{{car.opower}}</td>
 				<td class="highlight info"
-					title="Each car is custom and individually adjusted, the specified output is therefore an indication">370
-					hp</td>
+					title="Each car is custom and individually adjusted, the specified output is therefore an indication">{{car.s3power}}</td>
 				<td class="highlight info"
-					title="Each car is custom and individually adjusted, the specified output is therefore an indication">+
-					105 hp</td>
+					title="Each car is custom and individually adjusted, the specified output is therefore an indication">{{car.s3dpower}}</td>
 			</tr>
 			<tr>
 				<th scope="row">Torque</th>
-				<td>350 Nm</td>
-				<td class="highlight">450 Nm</td>
-				<td class="highlight">+ 100 Nm</td>
+				<td>{{car.otorque}}</td>
+				<td class="highlight">{{car.s3torque}}</td>
+				<td class="highlight">{{car.s3dtorque}}</td>
 			</tr>
 			<tr>
 				<td colspan="3" class="noborder">
@@ -33,8 +31,7 @@
 							class="popup">Payment options</a>
 					</div>
 				</td>
-				<td class="price small">Prices and specifications only<br>
-					by e-mail
+				<td class="price small">{{car.s3price}}
 				</td>
 			</tr>
 		</tbody>

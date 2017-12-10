@@ -5,12 +5,13 @@
 				<span class="stage"><a class="brp-eco"
 					href="#/navBar/allInformations/eco"></a></span> <span class="stage"><a
 					class="stage1" href="#/navBar/allInformations/stage1">stage 1</a></span> <span
-					class="stage"><a class="stage2"
-					href="#/navBar/allInformations/stage2">stage 2</a></span> <span
-					class="stage" href="#/navBar/allInformations/stage3"><a
-					class="stage3">stage 3</a></span> <span class="stage"><a
-					class="stage4" href="#/navBar/allInformations/stage4">stage 4</a></span> <span
-					class="stage"><a class="dsg"
+					class="stage" ng-show={{car.s2torque}}><a class="stage2"
+					href="#/navBar/allInformations/stage2">stage 2</a></span><span
+					class="stage" ng-show="{{car.s3torque}}"><a class="stage3"
+					href="#/navBar/allInformations/stage3">stage 3</a></span><span
+					class="stage" ng-show="{{car.s4torque}}"><a class="stage4"
+					href="#/navBar/allInformations/stage4">stage 4</a></span> <span
+					class="stage" ng-show="{{car.dolcontrol}}"><a class="dsg"
 					href="#/navBar/allInformations/dsg6">DSG6</a></span> <span class="stage">
 			</header>
 			<div ui-view="tableData"></div>
