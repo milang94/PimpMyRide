@@ -1,0 +1,387 @@
+<section class="row sub">
+	<div class="twentyfour columns">
+		<span class="title noback">Wählen Sie eine Marke ...</span>
+	</div>
+</section>
+<section class="row main" id="brands">
+	<div class="twentyfour columns bigpadding">
+		<div class="brand-disclaimer">BR-Performance hat keine besondere
+			Geschäftsbeziehung mit diesen Marken. Die Logos wurden daher nur als
+			einzige Information erwähnt.</div>
+
+		<!--
+       
+        <a href="chiptuning/1-cars/9-alfa-romeo/" class="merk"
+            ng-repeat="brand in brands"><img src="../original/3.png"
+            data-at2x="../original/3@2x.png" width="50" height="50"
+            alt="Alfa Romeo" class="social" original-title="Alfa Romeo"></a>
+ -->
+		<a ng-click="findModels('Alfa Romeo')" class="merk"><img
+			src="../original/3.png" data-at2x="../original/3@2x.png" width="50"
+			height="50" alt="Alfa Romeo" class="social"
+			style="margin-left: -25px; margin-top: -25px"
+			original-title="Alfa Romeo"></a> <a ng-click="findModels('Alpina')"
+			class="merk"><img src="../original/4.png"
+			data-at2x="../original/4@2x.png" width="50" height="50" alt="Alpina"
+			class="social" title="Alpina"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Alpine')" class="merk"><img
+			src="../picture/13577.png" data-at2x="../picture/13577@2x.png"
+			width="50" height="50" alt="Alpine" class="social" title="Alpine"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Aston Martin')" class="merk"><img
+			src="../original/7007.png" data-at2x="../original/7007@2x.png"
+			width="80" height="50" alt="Aston Martin" class="social"
+			title="Aston Martin" style="margin-left: -40px; margin-top: -25px"></a>
+		<a ng-click="findModels('Audi')" class="merk"><img
+			src="../picture/5.png" data-at2x="../picture/5@2x.png" width="122"
+			height="80" alt="Audi" class="social"
+			style="margin-left: -61px; margin-top: -40px" original-title="Audi"></a>
+		<a ng-click="findModels('Bentley')" class="merk"><img
+			src="../original/6.png" data-at2x="../original/6@2x.png" width="80"
+			height="50" alt="Bentley" class="social" title="Bentley"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('BMW')" class="merk"><img
+			src="../picture/7.png" data-at2x="../picture/7@2x.png" width="122"
+			height="80" alt="BMW" class="social"
+			style="margin-left: -61px; margin-top: -40px" original-title="BMW"></a>
+		<a ng-click="findModels('Buick')" class="merk"><img
+			src="../original/12944.png" data-at2x="../original/12944@2x.png"
+			width="50" height="50" alt="Buick" class="social" title="Buick"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Bugatti')" class="merk"><img
+			src="../original/8.png" data-at2x="../original/8@2x.png" width="80"
+			height="50" alt="Bugatti" class="social" title="Bugatti"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Cadillac')" class="merk"><img
+			src="../original/9.png" data-at2x="../original/9@2x.png" width="50"
+			height="50" alt="Cadillac" class="social" title="Cadillac"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Chevrolet')" class="merk"><img
+			src="../original/10.png" data-at2x="../original/10@2x.png" width="80"
+			height="50" alt="Chevrolet" class="social" title="Chevrolet"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Chrysler')" class="merk"><img
+			src="../original/11.png" data-at2x="../original/11@2x.png" width="80"
+			height="50" alt="Chrysler" class="social" title="Chrysler"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Citroen')" class="merk"><img
+			src="../original/12.png" data-at2x="../original/12@2x.png" width="56"
+			height="50" alt="Citroën" class="social" title="Citroën"
+			style="margin-left: -28px; margin-top: -25px"></a> <a
+			ng-click="findModels('Dacia')" class="merk"><img
+			src="../original/13.png" data-at2x="../original/13@2x.png" width="57"
+			height="50" alt="Dacia" class="social" title="Dacia"
+			style="margin-left: -29px; margin-top: -25px"></a> <a
+			ng-click="findModels('Daewoo')" class="merk"><img
+			src="../original/14.png" data-at2x="../original/14@2x.png" width="67"
+			height="50" alt="Daewoo" class="social" title="Daewoo"
+			style="margin-left: -34px; margin-top: -25px"></a> <a
+			ng-click="findModels('Dodge')" class="merk"><img
+			src="../original/15.png" data-at2x="../original/15@2x.png" width="47"
+			height="50" alt="Dodge" class="social" title="Dodge"
+			style="margin-left: -24px; margin-top: -25px"></a> <a
+			ng-click="findModels('DS')" class="merk"><img
+			src="../original/10089.png" data-at2x="../original/10089@2x.png"
+			width="41" height="50" alt="DS" class="social"
+			style="margin-left: -21px; margin-top: -25px" original-title="DS"></a>
+		<a ng-click="findModels('Ferrari')" class="merk"><img
+			src="../original/16.png" data-at2x="../original/16@2x.png" width="31"
+			height="50" alt="Ferrari" class="social" title="Ferrari"
+			style="margin-left: -16px; margin-top: -25px"></a> <a
+			ng-click="findModels('Fiat')" class="merk"><img
+			src="../original/17.png" data-at2x="../original/17@2x.png" width="50"
+			height="50" alt="Fiat" class="social"
+			style="margin-left: -25px; margin-top: -25px" original-title="Fiat"></a>
+		<a ng-click="findModels('Ford')" class="merk"><img
+			src="../picture/18.png" data-at2x="../picture/18@2x.png" width="122"
+			height="80" alt="Ford" class="social" title="Ford"
+			style="margin-left: -61px; margin-top: -40px"></a> <a
+			ng-click="findModels('GWM')" class="merk"><img
+			src="../original/8973.png" data-at2x="../original/8973@2x.png"
+			width="74" height="50" alt="GWM" class="social"
+			style="margin-left: -37px; margin-top: -25px" original-title="GWM"></a>
+		<a ng-click="findModels('Holden')" class="merk"><img
+			src="../original/holden.png" data-at2x="../original/holden@2x.png"
+			width="50" height="50" alt="Holden" class="social" title="Holden"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Honda')" class="merk"><img
+			src="../original/19.png" data-at2x="../original/19@2x.png" width="62"
+			height="50" alt="Honda" class="social" title="Honda"
+			style="margin-left: -31px; margin-top: -25px"></a> <a
+			ng-click="findModels('Hyundai')" class="merk"><img
+			src="../original/20.png" data-at2x="../original/20@2x.png" width="80"
+			height="50" alt="Hyundai" class="social" title="Hyundai"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Infinity')" class="merk"><img
+			src="../original/21.png" data-at2x="../original/21@2x.png" width="80"
+			height="50" alt="Infiniti" class="social" title="Infiniti"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Isuzu')" class="merk"><img
+			src="../original/1144.png" data-at2x="../original/1144@2x.png"
+			width="80" height="50" alt="Isuzu" class="social"
+			style="margin-left: -40px; margin-top: -25px" original-title="Isuzu"></a>
+		<a ng-click="findModels('Iveco')" class="merk"><img
+			src="../original/1941.png" data-at2x="../original/1941@2x.png"
+			width="80" height="50" alt="Iveco" class="social" title="Iveco"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Jaguar')" class="merk"><img
+			src="../original/22.png" data-at2x="../original/22@2x.png" width="80"
+			height="50" alt="Jaguar" class="social" title="Jaguar"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Jeep')" class="merk"><img
+			src="../original/23.png" data-at2x="../original/23@2x.png" width="80"
+			height="40" alt="Jeep" class="social" title="Jeep"
+			style="margin-left: -40px; margin-top: -20px"></a> <a
+			ng-click="findModels('Kia')" class="merk"><img
+			src="../original/24.png" data-at2x="../original/24@2x.png" width="80"
+			height="50" alt="Kia" class="social" title="Kia"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('KTM')" class="merk"><img
+			src="../original/25.png" data-at2x="../original/25@2x.png" width="80"
+			height="50" alt="KTM" class="social" title="KTM"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Lamborghini')" class="merk"><img
+			src="../original/26.png" data-at2x="../original/26@2x.png" width="50"
+			height="50" alt="Lamborghini" class="social" title="Lamborghini"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Lancia')" class="merk"><img
+			src="../original/27.png" data-at2x="../original/27@2x.png" width="50"
+			height="50" alt="Lancia" class="social" title="Lancia"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Landrover')" class="merk"><img
+			src="../original/28.png" data-at2x="../original/28@2x.png" width="80"
+			height="50" alt="Landrover" class="social" title="Landrover"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Lexus')" class="merk"><img
+			src="../original/9834.png" data-at2x="../original/9834@2x.png"
+			width="69" height="50" alt="Lexus" class="social" title="Lexus"
+			style="margin-left: -35px; margin-top: -25px"></a> <a
+			ng-click="findModels('Lotus')" class="merk"><img
+			src="../original/29.png" data-at2x="../original/29@2x.png" width="50"
+			height="50" alt="Lotus" class="social"
+			style="margin-left: -25px; margin-top: -25px" original-title="Lotus"></a>
+		<a ng-click="findModels('Mahindra')" class="merk"><img
+			src="../original/10937.png" data-at2x="../original/10937@2x.png"
+			width="80" height="50" alt="Mahindra" class="social" title="Mahindra"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('MAN')" class="merk"><img
+			src="../original/man.png" data-at2x="../original/man@2x.png"
+			width="80" height="50" alt="MAN" class="social" title="MAN"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Maserati')" class="merk"><img
+			src="../original/30.png" data-at2x="../original/30@2x.png" width="50"
+			height="50" alt="Maserati" class="social" title="Maserati"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Mazda')" class="merk"><img
+			src="../original/31.png" data-at2x="../original/31@2x.png" width="63"
+			height="50" alt="Mazda" class="social" title="Mazda"
+			style="margin-left: -32px; margin-top: -25px"></a> <a
+			ng-click="findModels('McLaren')" class="merk"><img
+			src="../original/1712.png" data-at2x="../original/1712@2x.png"
+			width="80" height="50" alt="McLaren" class="social" title="McLaren"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Mercedes')" class="merk"><img
+			src="../picture/32.png" data-at2x="../picture/32@2x.png" width="122"
+			height="80" alt="Mercedes" class="social" title="Mercedes"
+			style="margin-left: -61px; margin-top: -40px"></a> <a
+			ng-click="findModels('Mini')" class="merk"><img
+			src="../original/34.png" data-at2x="../original/34@2x.png" width="80"
+			height="50" alt="Mini" class="social" title="Mini"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Mitsubishi')" class="merk"><img
+			src="../original/35.png" data-at2x="../original/35@2x.png" width="57"
+			height="50" alt="Mitsubishi" class="social" title="Mitsubishi"
+			style="margin-left: -29px; margin-top: -25px"></a> <a
+			ng-click="findModels('Nissan')" class="merk"><img
+			src="../original/36.png" data-at2x="../original/36@2x.png" width="59"
+			height="50" alt="Nissan" class="social" title="Nissan"
+			style="margin-left: -30px; margin-top: -25px"></a> <a
+			ng-click="findModels('Opel')" class="merk"><img
+			src="../original/37.png" data-at2x="../original/37@2x.png" width="64"
+			height="50" alt="Opel" class="social" title="Opel"
+			style="margin-left: -32px; margin-top: -25px"></a> <a
+			ng-click="findModels('Pagani')" class="merk"><img
+			src="../original/2852.png" data-at2x="../original/2852@2x.png"
+			width="80" height="50" alt="Pagani" class="social" title="Pagani"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Peugeot')" class="merk"><img
+			src="../original/38.png" data-at2x="../original/38@2x.png" width="48"
+			height="50" alt="Peugeot" class="social" title="Peugeot"
+			style="margin-left: -24px; margin-top: -25px"></a> <a
+			ng-click="findModels('PGO')" class="merk"><img
+			src="../original/6833.png" data-at2x="../original/6833@2x.png"
+			width="50" height="50" alt="PGO" class="social" title="PGO"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Piaggio')" class="merk"><img
+			src="../original/4967.png" data-at2x="../original/4967@2x.png"
+			width="44" height="50" alt="Piaggio" class="social" title="Piaggio"
+			style="margin-left: -22px; margin-top: -25px"></a> <a
+			ng-click="findModels('Porsche')" class="merk"><img
+			src="../original/39.png" data-at2x="../original/39@2x.png" width="50"
+			height="50" alt="Porsche" class="social" title="Porsche"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Renault')" class="merk"><img
+			src="../picture/40.png" data-at2x="../picture/40@2x.png" width="122"
+			height="80" alt="Renault" class="social" title="Renault"
+			style="margin-left: -61px; margin-top: -40px"></a> <a
+			ng-click="findModels('Rolls Royce')" class="merk"><img
+			src="../original/41.png" data-at2x="../original/41@2x.png" width="50"
+			height="50" alt="Rolls Royce" class="social" title="Rolls Royce"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Saab')" class="merk"><img
+			src="../original/42.png" data-at2x="../original/42@2x.png" width="50"
+			height="50" alt="Saab" class="social" title="Saab"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Samsung')" class="merk"><img
+			src="../picture/samsung-renault.png"
+			data-at2x="../picture/samsung-renault@2x.png" width="80" height="50"
+			alt="Samsung" class="social" title="Samsung"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Scion')" class="merk"><img
+			src="../picture/7456.png" data-at2x="../picture/7456@2x.png"
+			width="80" height="50" alt="Scion" class="social" title="Scion"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Seat')" class="merk"><img
+			src="../original/43.png" data-at2x="../original/43@2x.png" width="57"
+			height="50" alt="Seat" class="social" title="Seat"
+			style="margin-left: -29px; margin-top: -25px"></a> <a
+			ng-click="findModels('Skoda')" class="merk"><img
+			src="../original/44.png" data-at2x="../original/44@2x.png" width="50"
+			height="50" alt="Skoda" class="social" title="Skoda"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Smart')" class="merk"><img
+			src="../original/45.png" data-at2x="../original/45@2x.png" width="53"
+			height="50" alt="Smart" class="social" title="Smart"
+			style="margin-left: -27px; margin-top: -25px"></a> <a
+			ng-click="findModels('SsangYong')" class="merk"><img
+			src="../original/1034.png" data-at2x="../original/1034@2x.png"
+			width="80" height="50" alt="SsangYong" class="social"
+			title="SsangYong" style="margin-left: -40px; margin-top: -25px"></a>
+		<a ng-click="findModels('Subaru')" class="merk"><img
+			src="../original/46.png" data-at2x="../original/46@2x.png" width="80"
+			height="50" alt="Subaru" class="social" title="Subaru"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Suzuki')" class="merk"><img
+			src="../original/47.png" data-at2x="../original/47@2x.png" width="50"
+			height="50" alt="Suzuki" class="social" title="Suzuki"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Tata')" class="merk"><img
+			src="../original/1035.png" data-at2x="../original/1035@2x.png"
+			width="75" height="50" alt="Tata" class="social" title="Tata"
+			style="margin-left: -38px; margin-top: -25px"></a> <a
+			ng-click="findModels('Toyota')" class="merk"><img
+			src="../original/48.png" data-at2x="../original/48@2x.png" width="80"
+			height="50" alt="Toyota" class="social" title="Toyota"
+			style="margin-left: -40px; margin-top: -25px"></a> <a
+			ng-click="findModels('Volkswagen')" class="merk"><img
+			src="../picture/50.png" data-at2x="../picture/50@2x.png" width="122"
+			height="80" alt="Volkswagen" class="social" title="Volkswagen"
+			style="margin-left: -61px; margin-top: -40px"></a> <a
+			ng-click="findModels('Volvo')" class="merk"><img
+			src="../original/49.png" data-at2x="../original/49@2x.png" width="50"
+			height="50" alt="Volvo" class="social" title="Volvo"
+			style="margin-left: -25px; margin-top: -25px"></a> <a
+			ng-click="findModels('Westfield')" class="merk"><img
+			src="../original/5091.png" data-at2x="../original/5091@2x.png"
+			width="50" height="50" alt="Westfield" class="social"
+			title="Westfield" style="margin-left: -25px; margin-top: -25px"></a>
+		<a ng-click="findModels('Wiesmann')" class="merk"><img
+			src="../original/51.png" data-at2x="../original/51@2x.png" width="41"
+			height="50" alt="Wiesmann" class="social" title="Wiesmann"
+			style="margin-left: -21px; margin-top: -25px"></a>
+		<div class="doClear"></div>
+		<p>
+			<span>Um Sie besser zu bedienen haben wir die möglichen
+				Updates in verschiedenen Stufen aufgeteilt, überprüfen Sie, welche
+				Schritte Ihrem Wagen zu Verfügung stehen. Nachfolgend finden Sie
+				eine kurze Beschreibung dessen, was die Stufen in der Regel:</span>
+		</p>
+		<ul class="block-grid one-up mobile-one-up articles stages">
+			<li>
+				<article>
+					<header>
+						<h2>Stufe 1</h2>
+						<h3>Neuzuteilung</h3>
+					</header>
+					<div class="content">
+						<p>
+							<span>Stufe 1 besteht aus einem einzelnen Umprogrammieren
+								der Motor-Management-System des Fahrzeugs, wobei die Verstellung
+								der Motorparameter (Zündung, Einspritzung, ...) auf dem
+								Prüfstand erfolgt. Alle Werte der Motorparameter zu diesem
+								Zeitpunkt bleiben innerhalb der Sicherheitsstandards durch den
+								Hersteller vorgegeben. Diese Stufe 1 ist 100% zuverlässig, kurz
+								gesagt, mehr Fahrspaß ohne Sorgen!</span>
+						</p>
+					</div>
+				</article>
+			</li>
+			<li>
+				<article>
+					<header>
+						<h2>Stufe 2</h2>
+						<h3>Neuabstimmung und Optimierung Ansaug-und Auspuff</h3>
+					</header>
+					<div class="content">
+						<p>
+							<span>Für diejenigen, die ein wenig mehr als Stufe 1
+								wollen, haben wir einen Schritt 2, der zum Optimieren einer
+								Anzahl von Elementen um den Motor, um den Wirkungsgrad des
+								Motors zu erhöhen besteht. In erster Linie ist dies über Ein-und
+								Auslassventile. Eine Menge von Lufteinlass-Systeme sind sehr
+								restriktiv, da ihrer Anti-Resonanz-Struktur, die bestimmt, um
+								die Aufnahme Geräusch des Motors zu dämpfen. Durch die Montage
+								einer Sport-Luftfilter oder benutzerdefinierten Lufteinlass,
+								mehr Luftstrom zum Motor gelangt bekommen wir eine schöne
+								Leistungssteigerung. Wie wir die Sicherheitsstandards des
+								Herstellers auf Stufe 2 zu erreichen, muss manchmal Teile zB
+								gestärkt werden Kupplung. Jede Stufe wird angegeben, welche
+								Teile ersetzt werden.</span>
+						</p>
+					</div>
+				</article>
+			</li>
+			<li>
+				<article>
+					<header>
+						<h2>Stufe 3</h2>
+						<h3>Neue Motorteile</h3>
+					</header>
+					<div class="content">
+						<p>
+							<span>Bei der Stufe 3 sind wir einen Schritt weiter
+								gegangen, hier werden wir die internen oder wichtigen Teile des
+								Motors oder Turbolader ersetzen, kann dies durch die Erhöhung
+								der Hubraum, in dem Sportnockenwellen,oder einen grösseren
+								Turbolader gehen. Manchmal gibt es einige leichte Risiken für
+								die Zuverlässigkeit, aber nicht immer. Hersteller bauen oft 1
+								Grundmotorblock und durch Verwendung einer größeren Turbolader
+								und Einspritzdüsen sie 2-Kapital-Versionen bauen können. Es
+								versteht sich von selbst, dass in einigen Fällen können Sie
+								Ihren Motor mit Originalteilen der schwereren Version zu
+								steigern, ohne Beeinträchtigung der Zuverlässigkeit, weil der
+								Hersteller dies bereits vorweggenommen hatte.</span>
+						</p>
+					</div>
+				</article>
+			</li>
+			<li>
+				<article>
+					<header>
+						<h2>ECO</h2>
+					</header>
+					<div class="content">
+						<p>ECO Tuning ist eine individuelle Neuprogrammierung des
+							Motormanagementsystems des Fahrzeugs. Die Einstellung der
+							Motorparameter (Zündung, Einspritzung,...) erfolgt entsprechend
+							der Vermögenstestbank. Alle Werte, die wir hier programmieren und
+							anpassen haben nur einen Zweck: den Kraftstoffverbrauch zu
+							senken!</p>
+					</div>
+				</article>
+			</li>
+		</ul>
+	</div>
+</section>
+

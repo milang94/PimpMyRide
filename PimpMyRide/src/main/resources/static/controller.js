@@ -13,9 +13,10 @@ app
 							$scope.allBrands = function() {
 								service.allBrands().then(function(response) {
 									$rootScope.brands = response.data;
+									$location.path('/home/brand');
 								});
 							}
-
+							
 							$scope.findModels = function(brandName) {
 								service.findModels(brandName).then(
 										function(response) {
@@ -23,11 +24,11 @@ app
 											$rootScope.brand = brandName;
 											$rootScope.myText = "<h3>"
 													+ brandName + "</h3>";
-											$location.path('/navBar/models');
+											$rootScope.myText1 = "Modell"
+											$location.path('/home/models');
 										});
 							}
 
-							
 							$scope.findBuildYears = function(modelName) {
 								service
 										.findBuildYears(modelName,
@@ -35,14 +36,15 @@ app
 										.then(
 												function(response) {
 													$rootScope.buildYears = response.data;
-													$rootScope.model = modelName;													
+													$rootScope.model = modelName;
 													$rootScope.myText = "<h3>"
 															+ $rootScope.brand
 															+ "</h3><h4>"
 															+ modelName
-															+ "</h4>";;
+															+ "</h4>";
+													$rootScope.myText1 = "Modell";
 													$location
-															.path('/navBar/models/buildYears');
+															.path('/home/models/buildYears');
 												});
 							}
 
@@ -64,6 +66,7 @@ app
 														}
 													}
 													$rootScope.yearr = year;
+													$rootScope.myText1 = "Motortyp";
 													$rootScope.myText = "<h3>"
 															+ $rootScope.brand
 															+ "</h3><h4>"
@@ -72,7 +75,7 @@ app
 															+ year + "</h5>";
 													$rootScope.refresh3 = false;
 													$location
-															.path('/navBar/models/buildYears/motorTypes');
+															.path('/home/models/buildYears/motorTypes');
 												});
 							}
 
@@ -94,19 +97,21 @@ app
 															+ "</h5><h6>" + mt
 															+ "</h6>";
 													$location
-															.path('navBar/allInformations/stage1');
+															.path('home/allInformations/stage1');
 												});
 							}
 
 							$scope.refresh = function() {
-								if($rootScope.brand == undefined){
-									service.allBrands().then(function(response) {
-										$rootScope.brands = response.data;
-										$location.path('/navBar/home');
-									});
+								if ($rootScope.brand == undefined) {
+									service
+											.allBrands()
+											.then(
+													function(response) {
+														$rootScope.brands = response.data;
+														$location
+																.path('/home/brand');
+													});
 								}
 							}
-
-							
 
 						} ]);

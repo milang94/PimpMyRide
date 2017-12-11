@@ -94,6 +94,28 @@ public class Car {
 	@Column
 	private String ds2price;
 
+	@Column
+	private String eefreduction;
+
+	@Column
+	private String eprice;
+
+	public String getEefreduction() {
+		return eefreduction;
+	}
+
+	public void setEefreduction(String eefreduction) {
+		this.eefreduction = eefreduction;
+	}
+
+	public String getEprice() {
+		return eprice;
+	}
+
+	public void setEprice(String eprice) {
+		this.eprice = eprice;
+	}
+
 	public Car() {
 		super();
 		// TODO Auto-generated constructor stub

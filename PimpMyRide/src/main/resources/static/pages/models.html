@@ -3,10 +3,10 @@
 	<section class="row sub" style="width: 100%">
 		<div class="twentyfour columns">
 			<div class="back">
-				<a href="chiptuning/1-cars/" class="button-full-rounded">brand
-					overview</a>
+				<a href="#/home/brands" class="button-full-rounded">brand
+					Übersicht</a>
 			</div>
-			<span class="title">Choose a model ...</span>
+			<span class="title">Wählen Sie ein {{myText1}} ... </span>
 		</div>
 	</section>
 
@@ -17,7 +17,7 @@
 					<article>
 						<header>
 							<h2>{{brand}}</h2>
-							<img src="../db/pictures/original/4.png" width="50" height="50"
+							{{brand.logo}} <img ng-src={{brand.logo}} width="50" height="50"
 								class="logo">
 						</header>
 						<ul class="content" ng-repeat="m in models">
