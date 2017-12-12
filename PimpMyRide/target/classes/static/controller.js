@@ -10,13 +10,6 @@ app
 						'$location',
 						function($scope, $rootScope, service, $location) {
 
-							$scope.allBrands = function() {
-								service.allBrands().then(function(response) {
-									$rootScope.brands = response.data;
-									$location.path('/home/brand');
-								});
-							}
-							
 							$scope.findModels = function(brandName) {
 								service.findModels(brandName).then(
 										function(response) {

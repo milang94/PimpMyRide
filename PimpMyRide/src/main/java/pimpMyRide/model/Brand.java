@@ -16,7 +16,7 @@ public class Brand {
 	@Column
 	private String name;
 	@Column
-	private Blob logo;
+	private String logo;
 	
 	
 	public Brand() {
@@ -34,12 +34,12 @@ public class Brand {
 	}
 
 
-	public Blob getLogo() {
+	public String getLogo() {
 		return logo;
 	}
 
 
-	public void setLogo(Blob logo) {
+	public void setLogo(String logo) {
 		this.logo = logo;
 	}
 	
