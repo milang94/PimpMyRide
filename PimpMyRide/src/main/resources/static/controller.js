@@ -10,11 +10,12 @@ app
 						'$location',
 						function($scope, $rootScope, service, $location) {
 
-							$scope.returnToBrands = function(){
-								$rootScope.model = null;
+							$scope.returnToBrands = function() {
+								$rootScope.myText = null;
+								$rootScope.varvar = false;
 								$location.path('/home/brands');
 							}
-							
+
 							$scope.findModels = function(brandName) {
 								service.findModels(brandName).then(
 										function(response) {
@@ -33,6 +34,7 @@ app
 												$rootScope.brand)
 										.then(
 												function(response) {
+													$rootScope.varvar = true;
 													$rootScope.buildYears = response.data;
 													$rootScope.model = modelName;
 													$rootScope.myText = "<h3>"
@@ -105,6 +107,7 @@ app
 											.allBrands()
 											.then(
 													function(response) {
+														$rootScope.varvar = 0;
 														$rootScope.brands = response.data;
 
 														$location
