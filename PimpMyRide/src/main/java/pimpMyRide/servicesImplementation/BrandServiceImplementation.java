@@ -10,15 +10,21 @@ import pimpMyRide.repositories.BrandRepository;
 import pimpMyRide.services.BrandService;
 
 @Service
-public class BrandServiceImplementation implements BrandService{
+public class BrandServiceImplementation implements BrandService {
 
 	@Autowired
 	private BrandRepository brandRep;
-	
+
 	@Override
 	public List<Brand> findAll() {
 		// TODO Auto-generated method stub
 		return brandRep.findAll();
+	}
+
+	@Override
+	public Brand findBrand(String brandName) {
+		// TODO Auto-generated method stub
+		return brandRep.findOne(brandName);
 	}
 
 }

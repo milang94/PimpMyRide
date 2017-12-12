@@ -38,18 +38,27 @@ public class Controller {
 		return new ResponseEntity<>(carService.findAllModels(brandName), HttpStatus.OK);
 	}
 
+	@GetMapping("/getBrand/{brandName}")
+	public ResponseEntity<Brand> findBrand(@PathVariable String brandName) {
+		return new ResponseEntity<>(brandService.findBrand(brandName), HttpStatus.OK);
+	}
+
 	@GetMapping("/getAllBuildYears/{brandName}/{modelName}")
 	public ResponseEntity<List<String>> allBuildYears(@PathVariable String brandName, @PathVariable String modelName) {
 		return new ResponseEntity<>(carService.findAllBuildYears(brandName, modelName), HttpStatus.OK);
 	}
-	
+
 	@GetMapping("/getMotorTypes/{brandName}/{year}/{modelName}")
-	public ResponseEntity<List<Object[]>> allMotorTypes(@PathVariable String brandName, @PathVariable String year, @PathVariable String modelName) {
+	public ResponseEntity<List<Object[]>> allMotorTypes(@PathVariable String brandName, @PathVariable String year,
+			@PathVariable String modelName) {
 		return new ResponseEntity<>(carService.findMotorTypes(brandName, modelName, year), HttpStatus.OK);
 	}
-	
+
 	@GetMapping("/getAllInformations/{brandName}/{modelName}/{year}/{motortype}/{fuel}/{opower}")
-	public ResponseEntity<Car> allInformations(@PathVariable String brandName, @PathVariable String modelName, @PathVariable String year, @PathVariable String motortype, @PathVariable String fuel, @PathVariable String opower) {
-		return new ResponseEntity<>(carService.findByBrandAndModelAndBuildyearAndMotortypeAndFuelAndOpower(brandName, modelName, year, motortype, fuel, opower), HttpStatus.OK);
+	public ResponseEntity<Car> allInformations(@PathVariable String brandName, @PathVariable String modelName,
+			@PathVariable String year, @PathVariable String motortype, @PathVariable String fuel,
+			@PathVariable String opower) {
+		return new ResponseEntity<>(carService.findByBrandAndModelAndBuildyearAndMotortypeAndFuelAndOpower(brandName,
+				modelName, year, motortype, fuel, opower), HttpStatus.OK);
 	}
 }

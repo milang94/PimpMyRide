@@ -8,9 +8,9 @@ import org.springframework.stereotype.Repository;
 import pimpMyRide.model.Brand;
 
 @Repository
-public interface BrandRepository extends JpaRepository<Brand, String>{
+public interface BrandRepository extends JpaRepository<Brand, String> {
 
 	List<Brand> findAll();
-	
-	
+
+	Brand findBrandByName(String brandName);
 }

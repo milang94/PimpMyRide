@@ -93,28 +93,10 @@ public class Car {
 	private String ds2stime;
 	@Column
 	private String ds2price;
-
 	@Column
 	private String eefreduction;
-
 	@Column
 	private String eprice;
-
-	public String getEefreduction() {
-		return eefreduction;
-	}
-
-	public void setEefreduction(String eefreduction) {
-		this.eefreduction = eefreduction;
-	}
-
-	public String getEprice() {
-		return eprice;
-	}
-
-	public void setEprice(String eprice) {
-		this.eprice = eprice;
-	}
 
 	public Car() {
 		super();
@@ -433,4 +415,19 @@ public class Car {
 		this.ds2price = ds2price;
 	}
 
+	public String getEefreduction() {
+		return eefreduction;
+	}
+
+	public void setEefreduction(String eefreduction) {
+		this.eefreduction = eefreduction;
+	}
+
+	public String getEprice() {
+		return eprice;
+	}
+
+	public void setEprice(String eprice) {
+		this.eprice = eprice;
+	}
 }

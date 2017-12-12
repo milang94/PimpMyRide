@@ -11,7 +11,8 @@ public interface CarService {
 	List<String> findAllBuildYears(String brandName, String modelName);
 
 	List<Object[]> findMotorTypes(String brandName, String modelName, String year);
-	
-	Car findByBrandAndModelAndBuildyearAndMotortypeAndFuelAndOpower(String brand, String model, String year, String motortype, String fuel, String opower);
+
+	Car findByBrandAndModelAndBuildyearAndMotortypeAndFuelAndOpower(String brand, String model, String year,
+			String motortype, String fuel, String opower);
 
 }

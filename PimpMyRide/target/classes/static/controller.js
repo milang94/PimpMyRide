@@ -10,6 +10,11 @@ app
 						'$location',
 						function($scope, $rootScope, service, $location) {
 
+							$scope.returnToBrands = function(){
+								$rootScope.model = null;
+								$location.path('/home/brands');
+							}
+							
 							$scope.findModels = function(brandName) {
 								service.findModels(brandName).then(
 										function(response) {
@@ -101,10 +106,20 @@ app
 											.then(
 													function(response) {
 														$rootScope.brands = response.data;
+
 														$location
 																.path('/home/brand');
 													});
 								}
+							}
+
+							$scope.findBrand = function(brandName) {
+								service
+										.findBrand(brandName)
+										.then(
+												function(response) {
+													$rootScope.brandModel = response.data;
+												});
 							}
 
 						} ]);

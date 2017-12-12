@@ -3,7 +3,7 @@
 	<section class="row sub" style="width: 100%">
 		<div class="twentyfour columns">
 			<div class="back">
-				<a href="#/home/brands" class="button-full-rounded">brand
+				<a ng-click="returnToBrands()" class="button-full-rounded">brand
 					Übersicht</a>
 			</div>
 			<span class="title">Wählen Sie ein {{myText1}} ... </span>
@@ -17,7 +17,7 @@
 					<article>
 						<header>
 							<h2>{{brand}}</h2>
-							{{brand.logo}} <img ng-src={{brand.logo}} width="50" height="50"
+							<img ng-src="{{brandModel.logo}}" width="50" height="50"
 								class="logo">
 						</header>
 						<ul class="content" ng-repeat="m in models">
