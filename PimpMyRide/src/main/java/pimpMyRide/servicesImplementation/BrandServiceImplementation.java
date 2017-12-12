@@ -1,7 +1,5 @@
 package pimpMyRide.servicesImplementation;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,12 +12,6 @@ public class BrandServiceImplementation implements BrandService {
 
 	@Autowired
 	private BrandRepository brandRep;
-
-	@Override
-	public List<Brand> findAll() {
-		// TODO Auto-generated method stub
-		return brandRep.findAll();
-	}
 
 	@Override
 	public Brand findBrand(String brandName) {

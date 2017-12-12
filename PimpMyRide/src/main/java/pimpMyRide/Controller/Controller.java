@@ -28,11 +28,6 @@ public class Controller {
 		this.carService = carService;
 	}
 
-	@GetMapping("/getAllBrands")
-	public ResponseEntity<List<Brand>> allBrands() {
-		return new ResponseEntity<>(brandService.findAll(), HttpStatus.OK);
-	}
-
 	@GetMapping("/getAllModels/{brandName}")
 	public ResponseEntity<List<String>> allModels(@PathVariable String brandName) {
 		return new ResponseEntity<>(carService.findAllModels(brandName), HttpStatus.OK);

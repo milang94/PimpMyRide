@@ -6,10 +6,6 @@ services.service('service', [
 		'$http',
 		function($http) {
 
-			this.allBrands = function() {
-				return $http.get("/controller/getAllBrands");
-			}
-
 			this.findModels = function(brandName) {
 				return $http.get("/controller/getAllModels/" + brandName);
 			}
