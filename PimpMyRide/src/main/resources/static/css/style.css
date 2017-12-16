@@ -14,24 +14,38 @@ audio, canvas, video {
 }
 
 audio
+
+
 :not
+
  
+
 (
 [
 controls
 ]
+
  
+
 ){
 display
-:
- 
-none
-;
 
-	
-height
+
 :
+
  
+
+none
+
+
+;
+height
+
+
+:
+
+ 
+
 0
 }
 [hidden] {
@@ -194,16 +208,28 @@ img {
 }
 
 svg
+
+
 :not
+
  
+
 (
 :root
+
  
+
 ){
 overflow
+
+
 :
+
  
+
 hidden
+
+
 
 
 }
@@ -3591,24 +3617,40 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 		color: #fff
 	}
 	.top-bar
+	
 	 
+	
 	ul
 	>
 	li
+	
 	 
+	
 	a
+	
+	
 	:not
+	
 	 
+	
 	(
 	.button
+	
 	 
+	
 	){
 	color
+	
+	
 	:
+	
 	 
+	
 	#fff
 	
 	
+	
+
 }
 
 .top-bar ul>li.toggle-topbar {
@@ -3713,25 +3755,43 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 }
 
 .top-bar
+
  
+
 ul
 >
 li
+
+
 .has-dropdown
+
+
 .moved
 >
 .dropdown
+
  
+
 li
+
+
 :not
+
  
+
 (
 .title
+
  
+
 ){
 padding-bottom
+
+
 :
+
  
+
 0
 }
 .top-bar ul>li.has-dropdown.moved>.dropdown li:not (.title ) a {
@@ -3853,30 +3913,50 @@ padding-bottom
 }
 
 .top-bar
+
  
+
 section
 >
 ul
+
  
+
 li
+
  
+
 a
+
+
 :not
+
  
+
 (
 .button
+
  
+
 ){
 padding-left
+
+
 :
+
  
+
 22
 .5px
+
  
+
 !
 important
 
+
 	
+
 }
 .top-bar.expanded {
 	height: 100%
@@ -4826,7 +4906,7 @@ section.kiosk .single {
 
 section.kiosk .single img {
 	outline: 0;
-	max-width: 100%;
+	max-width: 40%;
 	height: auto
 }
 
