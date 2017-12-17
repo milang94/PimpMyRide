@@ -234,6 +234,11 @@ section.graph .title .label {
 		no-repeat left center;
 }
 
+section.picture .title .label {
+	background: transparent url(../../../../../images/icon_pictures.png)
+		no-repeat left center;
+}
+
 section.extra .title .label {
 	background: transparent url(../../../../../images/icon_extra.png)
 		no-repeat left center;
@@ -279,6 +284,11 @@ section.services .title .label {
 		no-repeat left center;
 }
 
+section.serviceseco .title .label {
+	background: transparent url(../../../../../images/bg_brpeco.png)
+		no-repeat left center;
+}
+
 section.development .title .label {
 	background: transparent url(../../../../../images/icon_info.png)
 		no-repeat left center;
@@ -315,7 +325,7 @@ section.box div.content {
 }
 
 .second section.box div.content {
-	height: 268px;
+	height: 310px;
 }
 
 .second section.box .no-data {
