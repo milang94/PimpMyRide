@@ -4149,7 +4149,7 @@ iframe {
 	padding: 30px
 }
 
-.button-full-rounded {
+.button-full-rounded, .button-full-rounded1 {
 	padding: 1px 15px 2px 15px;
 	min-height: 25px;
 	color: white;
