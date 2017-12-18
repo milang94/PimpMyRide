@@ -51,14 +51,14 @@ app
 							}
 
 							$scope.findMotorType = function(year) {
+								$rootScope.motorTypes1 = [];
+								$rootScope.motorTypes2 = [];
+								$rootScope.motorTypes3 = [];
 								service
 										.findMotorType(year, $rootScope.model,
 												$rootScope.brand)
 										.then(
-												function(response) {
-													$rootScope.motorTypes1 = [];
-													$rootScope.motorTypes2 = [];
-													$rootScope.motorTypes3 = [];
+												function(response) {													
 													for (var i = 0; i < response.data.length; i += 1) {
 														if (response.data[i][1] == "Benzin") {
 															$rootScope.motorTypes1.push(response.data[i]);
@@ -96,6 +96,7 @@ app
 													$window.localStorage.setItem('mt0',mt[0]);
 													$window.localStorage.setItem('mt1',mt[1]);
 													$window.localStorage.setItem('mt2',mt[2]);
+													findModel($rootScope.model);
 													$location
 															.path('home/allInformations/stage1');
 												});
@@ -113,6 +114,13 @@ app
 								service.findBrand(brandName).then(
 										function(response) {
 											$rootScope.brandModel = response.data;
+												});
+							}
+							
+							function findModel(modelName) {
+								service.findModel(modelName).then(
+										function(response) {
+											$rootScope.modelImage = response.data;
 												});
 							}
 							

@@ -8,5 +8,5 @@ import pimpMyRide.model.Brand;
 @Repository
 public interface BrandRepository extends JpaRepository<Brand, String> {
 
-	Brand findBrandByName(String brandName);
+	Brand findByName(String brandName);
 }

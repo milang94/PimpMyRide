@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import pimpMyRide.model.Brand;
 import pimpMyRide.model.Car;
+import pimpMyRide.model.Model;
 import pimpMyRide.services.BrandService;
 import pimpMyRide.services.CarService;
 
@@ -36,6 +37,11 @@ public class Controller {
 	@GetMapping("/getBrand/{brandName}")
 	public ResponseEntity<Brand> findBrand(@PathVariable String brandName) {
 		return new ResponseEntity<>(brandService.findBrand(brandName), HttpStatus.OK);
+	}
+	
+	@GetMapping("/getModel/{modelName}")
+	public ResponseEntity<Model> findModel(@PathVariable String modelName) {
+		return new ResponseEntity<>(brandService.findModel(modelName), HttpStatus.OK);
 	}
 
 	@GetMapping("/getAllBuildYears/{brandName}/{modelName}")

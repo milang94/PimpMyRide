@@ -13,6 +13,10 @@ services.service('service', [
 			this.findBrand = function(brandName) {
 				return $http.get("/controller/getBrand/" + brandName);
 			}
+			
+			this.findModel = function(modelName) {
+				return $http.get("/controller/getModel/" + modelName);
+			}
 
 			this.findBuildYears = function(modelName, brandName) {
 				return $http.get("/controller/getAllBuildYears/" + brandName
