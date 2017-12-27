@@ -100,7 +100,7 @@ section.sub .columns .noback {
 
 .list article ul.content {
 	margin: 0;
-	padding: 12px;
+	padding: 6px;
 }
 
 .list article ul.content li {
@@ -109,7 +109,7 @@ section.sub .columns .noback {
 	border-bottom: 1px dotted #343434;
 }
 
-.list article ul.content li:last-child {
+.list article ul.content.last li {
 	border-bottom: 0;
 }
 

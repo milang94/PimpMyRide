@@ -85,11 +85,6 @@ section.title .back .button-full-rounded1, .previous {
 	background-position: left center;
 }
 
-
-section.box {
-	
-}
-
 section.box header.stages {
 	height: 50px;
 	line-height: 50px;
@@ -425,11 +420,11 @@ section.box div.inner-big {
 .stage-data td.price {
 	color: #56b2e7;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 36px;
 }
 
 .stage-data td.price.small {
-	font-size: 16px;
+	font-size: 36px;
 }
 
 .stage-data td.price span.oldprice {
@@ -1081,7 +1076,7 @@ form.answer label.error {
 	.stage-data td.price {
 		color: #56b2e7;
 		font-weight: bold;
-		font-size: 16px;
+		font-size: 36px;
 	}
 	.testimonials header .button-full-rounded {
 		display: none;

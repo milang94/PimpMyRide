@@ -6,7 +6,7 @@
 					style="max-height: 50px; max-width: 80px;"
 					class="logo hide-for-medium-down">
 			</header>
-			<ul class="content" ng-repeat="y in buildYears">
+			<ul class="content" ng-repeat="y in buildYears" ng-class="{'last':$last}">
 				<li><a ng-click="findMotorType(y)">{{y}}</a></li>
 			</ul>
 

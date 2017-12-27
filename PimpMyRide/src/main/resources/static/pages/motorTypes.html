@@ -9,9 +9,10 @@
 					<h2>{{yearr}}</h2>
 					<h3>Benzin</h3>
 				</header>
-				<ul class="content en" ng-repeat="mt1 in motorTypes1">
-					<li><a ng-click="allInformations(mt1)">{{mt1[0]}}&nbsp;&nbsp;
-							{{mt1[2]}} </a></li>
+				<ul class="content en" ng-repeat="mt1 in motorTypes1"
+					ng-class="{'last':$last}">
+					<li><a ng-click="allInformations(mt1)">{{mt1[0]}}&nbsp;&nbsp;&nbsp;&nbsp;
+							({{mt1[2]}}) </a></li>
 				</ul>
 			</div>
 			<div ng-if="motorTypes2.length">
@@ -22,9 +23,10 @@
 					<h2>{{yearr}}</h2>
 					<h3>Diesel</h3>
 				</header>
-				<ul class="content en" ng-repeat="mt2 in motorTypes2">
-					<li><a ng-click="allInformations(mt2)">{{mt2[0]}}&nbsp;&nbsp;
-							{{mt2[2]}}</a></li>
+				<ul class="content en" ng-repeat="mt2 in motorTypes2"
+					ng-class="{'last':$last}">
+					<li><a ng-click="allInformations(mt2)">{{mt2[0]}}&nbsp;&nbsp;&nbsp;&nbsp;
+							({{mt2[2]}})</a></li>
 				</ul>
 			</div>
 			<div ng-if="motorTypes3.length">
@@ -35,9 +37,10 @@
 					<h2>{{yearr}}</h2>
 					<h3>Hybride</h3>
 				</header>
-				<ul class="content en" ng-repeat="mt3 in motorTypes3">
-					<li><a ng-click="allInformations(mt3)">{{mt3[0]}}&nbsp;&nbsp;
-							{{mt3[2]}}</a></li>
+				<ul class="content en" ng-repeat="mt3 in motorTypes3"
+					ng-class="{'last':$last}">
+					<li><a ng-click="allInformations(mt3)">{{mt3[0]}}&nbsp;&nbsp;&nbsp;&nbsp;
+							({{mt3[2]}})</a></li>
 				</ul>
 			</div>
 		</article></li>

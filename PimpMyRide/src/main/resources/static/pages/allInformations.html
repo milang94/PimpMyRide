@@ -4,7 +4,7 @@
 		<div class="twentyfour columns">
 			<div class="back">
 				<a ng-click="returnToBrands()" class="button-full-rounded">brand
-					Übersicht</a>
+					&#220bersicht</a>
 			</div>
 		</div>
 	</section>
@@ -13,17 +13,17 @@
 		<div class="sixteen columns smalltoppadding">
 			<section class="box stage">
 				<header class="stages">
-					<span class="stage"><a class="brp-eco"
-						href="#/home/allInformations/eco"></a></span> <span class="stage"><a
+					<span class={{ecoSel}}><a class="brp-eco"
+						href="#/home/allInformations/eco"></a></span> <span class={{stage1Sel}}><a
 						class="stage1" href="#/home/allInformations/stage1">Stufe 1</a></span> <span
-						class="stage" ng-show="car.s2torque"><a class="stage2"
-						href="#/home/allInformations/stage2">Stufe 2</a></span><span
-						class="stage" ng-show="car.s3torque"><a class="stage3"
-						href="#/home/allInformations/stage3">Stufe 3</a></span><span
-						class="stage" ng-show="car.s4torque"><a class="stage4"
-						href="#/home/allInformations/stage4">Stufe 4</a></span> <span
-						class="stage" ng-show="car.dolcontrol"><a class="dsg"
-						href="#/home/allInformations/dsg6">DSG6</a></span> <span class="stage">
+						class={{stage2Sel}} ng-show="car.s2torque"><a
+						class="stage2" href="#/home/allInformations/stage2">Stufe 2</a></span><span
+						class={{stage3Sel}} ng-show="car.s3torque"><a
+						class="stage3" href="#/home/allInformations/stage3">Stufe 3</a></span><span
+						class={{stage4Sel}} ng-show="car.s4torque"><a
+						class="stage4" href="#/home/allInformations/stage4">Stufe 4</a></span> <span
+						class={{dsgSel}} ng-show="car.dolcontrol"><a class="dsg"
+						href="#/home/allInformations/dsg6">DSG6</a></span>
 				</header>
 				<div ui-view="tableData"></div>
 			</section>
@@ -47,15 +47,15 @@
 			style="width: 66.66%; padding-bottom: 50px;">
 			<section class="box stage">
 				<header class="title">
-					<span class="label">Unsere Qualität</span>
+					<span class="label">Unsere Qualit&#228t</span>
 				</header>
 				<div class="content nopadding">
 					<div class="inner-big">
 						<ul>
-							<li>Mehrere Messungen auf unserem Prüfstand</li>
-							<li>Individelle Abstimmung auf dem Prüfstand</li>
+							<li>Mehrere Messungen auf unserem Pr&#252fstand</li>
+							<li>Individelle Abstimmung auf dem Pr&#252fstand</li>
 							<li>5 Jahre Garantie</li>
-							<li>2 Wochen nicht zufrieden = Geld zurück</li>
+							<li>2 Wochen nicht zufrieden = Geld zur&#252ck</li>
 							<li>Ein USB-Stick mit Bildern und Messdiagrammen</li>
 							<li>Probefahrt mit Datenprotokollanalyse</li>
 							<li class="ecolabel">Emissionsstandartwerte werden

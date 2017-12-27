@@ -14,7 +14,7 @@
 				<td>{{car.opower}}</td>
 				<td class="highlight info"
 					title="Each car is custom and individually adjusted, the specified output is therefore an indication">{{car.s1power}}
-					</td>
+				</td>
 				<td class="highlight info"
 					title="Each car is custom and individually adjusted, the specified output is therefore an indication">{{car.s1dpower}}</td>
 			</tr>
@@ -32,15 +32,20 @@
 							class="popup">Zahlungsoptionen</a>
 					</div>
 				</td>
-				<td class="price small">{{car.s1price}}
-				</td>
+
+				<td
+					ng-hide="car.s1price=='Preise und technische daten nur per e-Mail'"
+					class="price small">&#128 {{car.s1price}}</td>
+				<td
+					ng-show="car.s1price=='Preise und technische daten nur per e-Mail'"
+					class="price small" style="font-size: 16px">{{car.s1price}}</td>
 			</tr>
 		</tbody>
 	</table>
 	<div class="more-info en">
 		<span class="label">Haben Sie Fragen zu diesem Stufe ? </span> <span
-			class="button-full-rounded"> <a
-			>MAILEN SIE UNS FÜR WEITERE INFORMATIONEN</a>
+			class="button-full-rounded"> <a>MAILEN SIE UNS F&#220R
+				WEITERE INFORMATIONEN</a>
 		</span>
 	</div>
 </div>

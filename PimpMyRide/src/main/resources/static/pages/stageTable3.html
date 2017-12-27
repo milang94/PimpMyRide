@@ -31,15 +31,15 @@
 							class="popup">Zahlungsoptionen</a>
 					</div>
 				</td>
-				<td class="price small">{{car.s3price}}
-				</td>
+				<td ng-hide="car.s3price=='Preise und technische daten nur per e-Mail'" class="price small">&#128 {{car.s3price}}</td>
+				<td ng-show="car.s3price=='Preise und technische daten nur per e-Mail'" class="price small" style="font-size: 16px">{{car.s3price}}</td>
 			</tr>
 		</tbody>
 	</table>
 	<div class="more-info en">
 		<span class="label">Haben Sie Fragen zu diesem Stufe ? </span> <span
-			class="button-full-rounded"> <a
-			>MAILEN SIE UNS FÜR WEITERE INFORMATIONEN</a>
+			class="button-full-rounded"> <a>MAILEN SIE UNS F&#220R
+				WEITERE INFORMATIONEN</a>
 		</span>
 	</div>
 </div>
