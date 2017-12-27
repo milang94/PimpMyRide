@@ -1,14 +1,15 @@
-<div ng-init = "refresh()">
-<li style="float: left; width: 33.33%"><article>
-		<header>
-			<h2>{{model}}</h2>
-			<img src="{{brandModel.logo}}" width="50" height="50"
-			 class="logo hide-for-medium-down">
-		</header>
-		<ul class="content" ng-repeat="y in buildYears">
-			<li><a ng-click="findMotorType(y)" >{{y}}</a></li>
-		</ul>
+<div ng-init="refresh()">
+	<li style="float: left; width: 33.33%"><article>
+			<header>
+				<h2>{{model}}</h2>
+				<img src="{{brandModel.logo}}"
+					style="max-height: 50px; max-width: 80px;"
+					class="logo hide-for-medium-down">
+			</header>
+			<ul class="content" ng-repeat="y in buildYears">
+				<li><a ng-click="findMotorType(y)">{{y}}</a></li>
+			</ul>
 
-	</article></li>
-<ui-view></ui-view>
+		</article></li>
+	<ui-view></ui-view>
 </div>

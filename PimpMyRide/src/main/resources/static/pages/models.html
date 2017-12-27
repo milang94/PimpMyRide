@@ -19,8 +19,8 @@
 					<article>
 						<header>
 							<h2>{{brand}}</h2>
-							<img ng-src="{{brandModel.logo}}" width="50" height="50"
-								class="logo">
+							<img ng-src="{{brandModel.logo}}" class="logo"
+								style="max-height: 50px; max-width: 80px;">
 						</header>
 						<ul class="content" ng-repeat="m in models">
 							<li><a ng-click="findBuildYears(m)">{{m}}</a></li>
