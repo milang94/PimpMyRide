@@ -82,6 +82,7 @@ app
 							}
 
 							$scope.allInformations = function(mt) {
+								findModel($rootScope.model);
 								service.allInformations($rootScope.brand,$rootScope.model,$rootScope.yearr, mt[0], mt[1],mt[2]).then(
 												function(response) {
 													$rootScope.car = response.data;													
@@ -95,8 +96,7 @@ app
 															+ "</h6>";
 													$window.localStorage.setItem('mt0',mt[0]);
 													$window.localStorage.setItem('mt1',mt[1]);
-													$window.localStorage.setItem('mt2',mt[2]);
-													findModel($rootScope.model);
+													$window.localStorage.setItem('mt2',mt[2]);													
 													$location
 															.path('home/allInformations/stage1');
 												});
@@ -106,6 +106,7 @@ app
 								if ($rootScope.brand == undefined) {
 									$rootScope.varvar = false;
 									$rootScope.myText = null;
+									$rootScope.modelImage = null;
 									$location.path('/home/brand');
 								}
 							}
