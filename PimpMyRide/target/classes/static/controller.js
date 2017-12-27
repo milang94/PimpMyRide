@@ -163,6 +163,7 @@ app
 								if ($rootScope.brand == undefined) {
 									$rootScope.varvar = false;
 									$rootScope.myText = null;
+									$rootScope.modelImage = null;
 									$location.path('/home/brand');
 								}
 							}
