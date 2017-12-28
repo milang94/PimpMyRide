@@ -135,6 +135,7 @@ app
 											});
 
 							$scope.allInformations = function(mt) {
+								findModel($rootScope.model);
 								service
 										.allInformations($rootScope.brand,
 												$rootScope.model,
@@ -153,7 +154,7 @@ app
 													$window.localStorage
 															.setItem('mt2',
 																	mt[2]);
-													findModel($rootScope.model);
+													
 													$location
 															.path('home/allInformations/stage1');
 												});
