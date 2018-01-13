@@ -11,8 +11,8 @@
 				</header>
 				<ul class="content en" ng-repeat="mt1 in motorTypes1"
 					ng-class="{'last':$last}">
-					<li><a ng-click="allInformations(mt1)">{{mt1[0]}}&nbsp;&nbsp;&nbsp;&nbsp;
-							({{mt1[2]}}) </a></li>
+					<li><a ng-click="allInformations(mt1)">{{mt1[0]}}</a><a
+						ng-click="allInformations(mt1)" style="float:right"><span> {{mt1[2]}} </span></a></li>
 				</ul>
 			</div>
 			<div ng-if="motorTypes2.length">
@@ -25,8 +25,8 @@
 				</header>
 				<ul class="content en" ng-repeat="mt2 in motorTypes2"
 					ng-class="{'last':$last}">
-					<li><a ng-click="allInformations(mt2)">{{mt2[0]}}&nbsp;&nbsp;&nbsp;&nbsp;
-							({{mt2[2]}})</a></li>
+					<li><a ng-click="allInformations(mt2)">{{mt2[0]}}</a><a
+						ng-click="allInformations(mt2)" style="float:right"><span>{{mt2[2]}}</span></a></li>
 				</ul>
 			</div>
 			<div ng-if="motorTypes3.length">
@@ -39,8 +39,7 @@
 				</header>
 				<ul class="content en" ng-repeat="mt3 in motorTypes3"
 					ng-class="{'last':$last}">
-					<li><a ng-click="allInformations(mt3)">{{mt3[0]}}&nbsp;&nbsp;&nbsp;&nbsp;
-							({{mt3[2]}})</a></li>
+					<li><a ng-click="allInformations(mt3)">{{mt3[0]}}</a><a ng-click="allInformations(mt3)" style="float:right"><span>{{mt3[2]}}</span></a></li>
 				</ul>
 			</div>
 		</article></li>
