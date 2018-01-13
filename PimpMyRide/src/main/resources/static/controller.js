@@ -96,36 +96,26 @@ app
 													$rootScope.myText = "<h3><a href='#/home/models'>"
 															+ $rootScope.brand
 															+ "</a></h3>";
-													$scope.clas1 = "da";
-													$scope.clas2 = "ne";
-													$scope.clas3 = "ne";
-
 												} else if (toState.name == "home.models.buildYears") {
-													$rootScope.myText = "<h3 class='displej'><a href='#/home/models'>"
+													$rootScope.myText = "<h3><a href='#/home/models'>"
 															+ $rootScope.brand
 															+ "</a></h3><h4><a href='#/home/models/buildYears'>"
 															+ $rootScope.model
 															+ "</a></h4>";
-													$scope.clas1 = "ne";
-													$scope.clas2 = "da";
-													$scope.clas3 = "ne";
 												} else if (toState.name == "home.models.buildYears.motorTypes") {
-													$rootScope.myText = "<h3 class='displej'><a href='#/home/models'>"
+													$rootScope.myText = "<h3><a href='#/home/models'>"
 															+ $rootScope.brand
-															+ "</a></h3><h4 class='displej'><a href='#/home/models/buildYears'>"
+															+ "</a></h3><h4><a href='#/home/models/buildYears'>"
 															+ $rootScope.model
 															+ "</a></h4><h5><a href='#/home/models/buildYears/motorTypes'>"
 															+ $rootScope.yearr
 															+ "</a></h5>";
-													$scope.clas1 = "ne";
-													$scope.clas2 = "ne";
-													$scope.clas3 = "da";
 												} else if (toState.name == "home.allInformations.stage1") {
-													$rootScope.myText = "<h3 class='displej'><a href='#/home/models'>"
+													$rootScope.myText = "<h3><a href='#/home/models'>"
 															+ $rootScope.brand
-															+ "</a></h3><h4 class='displej'><a href='#/home/models/buildYears'>"
+															+ "</a></h3><h4><a href='#/home/models/buildYears'>"
 															+ $rootScope.model
-															+ "</a></h4><h5 class='displej'><a href='#/home/models/buildYears/motorTypes'>"
+															+ "</a></h4><h5><a href='#/home/models/buildYears/motorTypes'>"
 															+ $rootScope.yearr
 															+ "</a></h5><h6>"
 															+ $rootScope.mt
@@ -164,7 +154,7 @@ app
 													$window.localStorage
 															.setItem('mt2',
 																	mt[2]);
-
+													
 													$location
 															.path('home/allInformations/stage1');
 												});
@@ -197,7 +187,7 @@ app
 												});
 							}
 
-							$scope.ref = function() {
+							/*$scope.ref = function() {
 								if ($rootScope.car == undefined) {
 									var b = $window.localStorage
 											.getItem('brandd');
@@ -233,6 +223,6 @@ app
 																+ "</h6>";
 													});
 								}
-							}
+							}*/
 
 						} ]);
