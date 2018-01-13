@@ -606,17 +606,17 @@ a img {
 }
 
 a {
-	color: #56b2e7;
+	color: #ffa5a9;
 	text-decoration: none;
 	line-height: inherit
 }
 
 a:hover {
-	color: #40a8e4
+	color: #ffa5a9
 }
 
 a:focus {
-	color: #40a8e4
+	color: #ffa5a9
 }
 
 p a, p a:visited {
@@ -1652,7 +1652,7 @@ form.custom .custom.disabled {
 
 .button {
 	width: auto;
-	background: #56b2e7;
+	background: #ffa5a9;
 	border: 1px solid #1e91d3;
 	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -1711,7 +1711,7 @@ form.custom .custom.disabled {
 }
 
 .button.primary {
-	background-color: #56b2e7;
+	background-color: #ffa5a9;
 	border: 1px solid #1e91d3
 }
 
@@ -1778,14 +1778,14 @@ form.custom .custom.disabled {
 .button.disabled, .button[disabled] {
 	opacity: 0.6;
 	cursor: default;
-	background: #56b2e7;
+	background: #ffa5a9;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none
 }
 
 .button.disabled:hover, .button[disabled]:hover {
-	background: #56b2e7
+	background: #ffa5a9
 }
 
 .button.disabled.success, .button[disabled].success {
@@ -3181,7 +3181,7 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 	}
 	.tabs.mobile dd a.active, .tabs.mobile li a.active {
 		border: none;
-		background: #56b2e7;
+		background: #ffa5a9;
 		color: #fff;
 		margin: 0;
 		position: static;
@@ -3842,8 +3842,7 @@ a {
 }
 
 a:hover {
-	color: #66ccff
-}
+	color: #ffa5a9}
 
 label {
 	font-weight: bold;
@@ -3961,25 +3960,25 @@ iframe {
 	border: none;
 	border-top: 1px solid rgba(255, 255, 255, 0.3);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-	background: #2c507a;
-	background: -moz-linear-gradient(top, #2c507a 0%, #395f89 50%, #2c507a 50%, #305681
+	background: #e8141e;
+	background: -moz-linear-gradient(top, #e8141e 0%, #f9131e 50%, #e8141e 50%, #fc1e28
 		100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2c507a),
-		color-stop(50%, #395f89), color-stop(50%, #2c507a),
-		color-stop(100%, #305681));
-	background: -webkit-linear-gradient(top, #2c507a 0%, #395f89 50%, #2c507a 50%,
-		#305681 100%);
-	background: -o-linear-gradient(top, #2c507a 0%, #395f89 50%, #2c507a 50%, #305681
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8141e),
+		color-stop(50%, #f9131e), color-stop(50%, #e8141e),
+		color-stop(100%, #fc1e28));
+	background: -webkit-linear-gradient(top, #e8141e 0%, #f9131e 50%, #e8141e 50%,
+		#fc1e28 100%);
+	background: -o-linear-gradient(top, #e8141e 0%, #f9131e 50%, #e8141e 50%, #fc1e28
 		100%);
-	background: -ms-linear-gradient(top, #2c507a 0%, #395f89 50%, #2c507a 50%, #305681
+	background: -ms-linear-gradient(top, #e8141e 0%, #f9131e 50%, #e8141e 50%, #fc1e28
 		100%);
-	background: linear-gradient(to bottom, #2c507a 0%, #395f89 50%, #2c507a 50%, #305681
+	background: linear-gradient(to bottom, #e8141e 0%, #f9131e 50%, #e8141e 50%, #fc1e28
 		100%);
 	white-space: nowrap
 }
 
 .button-full-rounded:hover {
-	color: #56b2e7
+	color: #ffa5a9
 }
 
 .box-border {
@@ -4146,7 +4145,7 @@ div.alert-box {
 	font-weight: bold;
 	font-size: 14px;
 	color: #fff;
-	background-color: #56b2e7;
+	background-color: #ffa5a9;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	margin-bottom: 12px;
 	-webkit-border-radius: 3px;
@@ -4383,7 +4382,7 @@ nav.primary ul li a {
 }
 
 nav.primary ul li a:hover {
-	color: #56b2e7
+	color: #ffa5a9
 }
 
 nav.primary ul li.sel a {
@@ -4441,7 +4440,7 @@ section.title .group h1 a, section.title .group h2 a, section.title .group h3 a,
 section.title .group h1 a:hover, section.title .group h2 a:hover,
 	section.title .group h3 a:hover, section.title .group h4 a:hover,
 	section.title .group h5 a:hover, section.title .group h6 a:hover {
-	color: #56b2e7
+	color: #ffa5a9
 }
 
 section.title .group h1 {
@@ -4843,23 +4842,23 @@ section.user-panel .basket a.button-full-rounded {
 		margin-right: 10px;
 		background-image: url(../images/toggle_nav.png);
 		background-image: url(../images/toggle_nav.png),
-			-moz-linear-gradient(top, #2c507a 0%, #395f89 50%, #2c507a 50%, #305681
+			-moz-linear-gradient(top, #e8141e 0%, #f9131e 50%, #e8141e 50%, #fc1e28
 			100%);
 		background-image: url(../images/toggle_nav.png),
-			-webkit-gradient(linear, left top, left bottom, color-stop(0%, #2c507a),
-			color-stop(50%, #395f89), color-stop(50%, #2c507a),
-			color-stop(100%, #305681));
+			-webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8141e),
+			color-stop(50%, #f9131e), color-stop(50%, #e8141e),
+			color-stop(100%, #fc1e28));
 		background-image: url(../images/toggle_nav.png),
-			-webkit-linear-gradient(top, #2c507a 0%, #395f89 50%, #2c507a 50%,
-			#305681 100%);
+			-webkit-linear-gradient(top, #e8141e 0%, #f9131e 50%, #e8141e 50%,
+			#fc1e28 100%);
 		background-image: url(../images/toggle_nav.png),
-			-o-linear-gradient(top, #2c507a 0%, #395f89 50%, #2c507a 50%, #305681
+			-o-linear-gradient(top, #e8141e 0%, #f9131e 50%, #e8141e 50%, #fc1e28
 			100%);
 		background-image: url(../images/toggle_nav.png),
-			-ms-linear-gradient(top, #2c507a 0%, #395f89 50%, #2c507a 50%, #305681
+			-ms-linear-gradient(top, #e8141e 0%, #f9131e 50%, #e8141e 50%, #fc1e28
 			100%);
 		background-image: url(../images/toggle_nav.png),
-			linear-gradient(to bottom, #2c507a 0%, #395f89 50%, #2c507a 50%, #305681
+			linear-gradient(to bottom, #e8141e 0%, #f9131e 50%, #e8141e 50%, #fc1e28
 			100%);
 		background-repeat: no-repeat;
 		background-position: center center
@@ -4871,23 +4870,23 @@ section.user-panel .basket a.button-full-rounded {
 		border-radius: 5px;
 		background-image: url(../images/toggle_nav_o.png);
 		background-image: url(../images/toggle_nav_o.png),
-			-moz-linear-gradient(top, #2c507a 0%, #395f89 50%, #2c507a 50%, #305681
+			-moz-linear-gradient(top, #e8141e 0%, #f9131e 50%, #e8141e 50%, #fc1e28
 			100%);
 		background-image: url(../images/toggle_nav_o.png),
-			-webkit-gradient(linear, left top, left bottom, color-stop(0%, #2c507a),
-			color-stop(50%, #395f89), color-stop(50%, #2c507a),
-			color-stop(100%, #305681));
+			-webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8141e),
+			color-stop(50%, #f9131e), color-stop(50%, #e8141e),
+			color-stop(100%, #fc1e28));
 		background-image: url(../images/toggle_nav_o.png),
-			-webkit-linear-gradient(top, #2c507a 0%, #395f89 50%, #2c507a 50%,
-			#305681 100%);
+			-webkit-linear-gradient(top, #e8141e 0%, #f9131e 50%, #e8141e 50%,
+			#fc1e28 100%);
 		background-image: url(../images/toggle_nav_o.png),
-			-o-linear-gradient(top, #2c507a 0%, #395f89 50%, #2c507a 50%, #305681
+			-o-linear-gradient(top, #e8141e 0%, #f9131e 50%, #e8141e 50%, #fc1e28
 			100%);
 		background-image: url(../images/toggle_nav_o.png),
-			-ms-linear-gradient(top, #2c507a 0%, #395f89 50%, #2c507a 50%, #305681
+			-ms-linear-gradient(top, #e8141e 0%, #f9131e 50%, #e8141e 50%, #fc1e28
 			100%);
 		background-image: url(../images/toggle_nav_o.png),
-			linear-gradient(to bottom, #2c507a 0%, #395f89 50%, #2c507a 50%, #305681
+			linear-gradient(to bottom, #e8141e 0%, #f9131e 50%, #e8141e 50%, #fc1e28
 			100%);
 		background-repeat: no-repeat;
 		background-position: center center
@@ -4928,7 +4927,7 @@ section.user-panel .basket a.button-full-rounded {
 		text-shadow: 1px 1px 0px #000
 	}
 	nav.primary ul li a:hover {
-		color: #56b2e7
+		color: #ffa5a9
 	}
 	nav.primary ul li.sel>a {
 		font-style: italic;
