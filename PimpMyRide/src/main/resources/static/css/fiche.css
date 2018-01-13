@@ -995,7 +995,7 @@ form.answer label.error {
 		display: none !important;
 	}
 	section.title .group *:nth-last-child(2) {
-		display: inline-block !important;
+		display: inline-block;
 		margin-left: 0;
 		font-size: 19px;
 		padding: 0 35px 0 25px;
