@@ -7,6 +7,10 @@
 	margin-left: 66.66%;
 }
 
+.titleCol {
+	text-align: center !important;
+}
+
 .btnsRight {
 	float: right;
 	padding-right: 50px;
