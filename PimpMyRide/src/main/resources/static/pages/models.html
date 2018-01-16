@@ -8,6 +8,11 @@
 					&#220bersicht</a>
 			</div>
 			<span class="title">W&#228hlen Sie ein {{myText1}} ... </span>
+			<div class="btnsRight">
+				<a href="http://fastech.de/" class="button-full-rounded"><span>Zur&#252ck
+						zur Startseite</span></a> <a href="http://fastech.de/Kontakt/"
+					class="button-full-rounded1"><span>Kontaktieren Sie uns</span></a>
+			</div>
 		</div>
 	</section>
 
@@ -22,7 +27,8 @@
 							<img ng-src="{{brandModel.logo}}" class="logo"
 								style="max-height: 50px; max-width: 80px;">
 						</header>
-						<ul class="content" ng-repeat="m in models" ng-class="{'last':$last}">
+						<ul class="content" ng-repeat="m in models"
+							ng-class="{'last':$last}">
 							<li><a ng-click="findBuildYears(m)">{{m}}</a></li>
 						</ul>
 					</article>

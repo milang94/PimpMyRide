@@ -3,8 +3,8 @@
 		class="stage-data">
 		<tbody>
 			<tr>
-				<th scope="col" class="empty"><a href="chiptuning/stages/"
-					data-fancybox-type="iframe" class="popup">mehr infos</a></th>
+				<th scope="col" class="empty"><a data-fancybox-type="iframe"
+					class="popup">mehr infos</a></th>
 				<th scope="col">Original</th>
 				<th scope="col">Nach tuning</th>
 				<th scope="col">Differenz</th>
@@ -31,14 +31,18 @@
 							class="popup">Zahlungsoptionen</a>
 					</div>
 				</td>
-				<td ng-hide="car.s3price=='Preise und technische daten nur per e-Mail'" class="price small">&#128 {{car.s3price}}</td>
-				<td ng-show="car.s3price=='Preise und technische daten nur per e-Mail'" class="price small" style="font-size: 16px">{{car.s3price}}</td>
+				<td
+					ng-hide="car.s3price=='Preise und technische daten nur per e-Mail'"
+					class="price small">&#128 {{car.s3price}}</td>
+				<td
+					ng-show="car.s3price=='Preise und technische daten nur per e-Mail'"
+					class="price small" id="show" style="font-size: 16px">{{car.s3price}}</td>
 			</tr>
 		</tbody>
 	</table>
 	<div class="more-info en">
 		<span class="label">Haben Sie Fragen zu diesem Stufe ? </span> <span
-			class="button-full-rounded"> <a>MAILEN SIE UNS F&#220R
+			class="button-full-rounded"> <a href="http://info@fastech.de/">MAILEN SIE UNS F&#220R
 				WEITERE INFORMATIONEN</a>
 		</span>
 	</div>

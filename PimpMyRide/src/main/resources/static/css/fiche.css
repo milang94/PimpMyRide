@@ -308,7 +308,7 @@ section.services .title .label {
 }
 
 section.serviceseco .title .label {
-	background: transparent url(../../../../../images/bg_brpeco.png)
+	background: transparent url(../../../../../images/bg_brpeco_sel.png)
 		no-repeat left center;
 }
 
@@ -1074,7 +1074,7 @@ form.answer label.error {
 		font-size: 14px;
 	}
 	.stage-data td.price {
-		color: #ffa5a9;
+		color: #e8141e;
 		font-weight: bold;
 		font-size: 36px;
 	}

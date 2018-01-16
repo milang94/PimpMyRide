@@ -3,7 +3,8 @@
 		class="stage-data">
 		<tbody>
 			<tr>
-				<th scope="col" class="empty">&nbsp;</th>
+				<th scope="col" class="empty"><a data-fancybox-type="iframe"
+					class="popup">mehr infos</a></th>
 				<th scope="col">Original</th>
 				<th scope="col">Stufe 1</th>
 				<th scope="col">Stufe 2</th>
@@ -37,15 +38,15 @@
 				<td
 					ng-hide="car.ds1price=='Preise und technische daten nur per e-Mail'"
 					class="price">&#128 {{car.ds1price}}</td>
-				<td class="price"
+				<td class="price" id="show"
 					ng-show="car.ds1price=='Preise und technische daten nur per e-Mail'"
 					style="font-size: 16px">{{car.ds1price}}</td>
 				<td
 					ng-hide="car.ds2price=='Preise und technische daten nur per e-Mail'"
-					class="price">&#128 {{car.ds1price}}</td>
-				<td class="price"
+					class="price">&#128 {{car.ds2price}}</td>
+				<td class="price" id="show"
 					ng-show="car.ds2price=='Preise und technische daten nur per e-Mail'"
-					style="font-size: 16px">{{car.ds1price}}</td>
+					style="font-size: 16px">{{car.ds2price}}</td>
 			</tr>
 		</tbody>
 	</table>
