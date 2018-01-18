@@ -413,12 +413,12 @@ section.box div.inner-big {
 }
 
 .stage-data td.highlight {
-	color: #e8141e;
+	color: #56b2e7;
 	font-weight: bold;
 }
 
 .stage-data td.price {
-	color: #e8141e;
+	color: #56b2e7;
 	font-weight: bold;
 	font-size: 36px;
 }
@@ -1074,7 +1074,7 @@ form.answer label.error {
 		font-size: 14px;
 	}
 	.stage-data td.price {
-		color: #e8141e;
+		color: #56b2e7;
 		font-weight: bold;
 		font-size: 36px;
 	}
