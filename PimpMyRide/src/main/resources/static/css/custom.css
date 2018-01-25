@@ -2,6 +2,14 @@
 	display: inline-flex;
 }
 
+section.box .title .label {
+	text-transform: none;
+}
+
+.white {
+	color: white;
+}
+
 marquee {
 	vertical-align: middle;
 }
@@ -43,6 +51,12 @@ section.sub .columns .title {
 
 .row.main {
 	min-height: 300px;
+}
+
+@media screen and (max-width :1024px) and (min-width :997px) {
+	.rollingText {
+		font-size: 10px !important;
+	}
 }
 
 @media screen and (max-width :767.99px) {
