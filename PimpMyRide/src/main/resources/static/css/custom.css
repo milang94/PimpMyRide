@@ -1,3 +1,16 @@
+.roller {
+	display: inline-flex;
+}
+
+marquee {
+	vertical-align: middle;
+}
+
+.rollingText {
+	font-size: 19px;
+	line-height: inherit;
+}
+
 #buildYrs {
 	float: left;
 	width: 33.33%
