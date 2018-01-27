@@ -11,6 +11,10 @@ app
 						'$window',
 						function($scope, $rootScope, service, $location,
 								$window) {
+							
+							$rootScope.$on('$stateChangeSuccess', function() {
+								$("html, body").animate({scrollTop: 0}, 10)
+							})
 
 							$scope.returnToBrands = function() {
 								$rootScope.myText = null;
