@@ -2,6 +2,16 @@
 	display: inline-flex;
 }
 
+.btnsRight {
+	float: right;
+}
+
+#rollingImg {
+	margin-top: 10px;
+	height: 100px;
+	min-width: 100px;
+}
+
 section.box .title .label {
 	text-transform: none;
 }
@@ -15,8 +25,12 @@ marquee {
 }
 
 .rollingText {
-	font-size: 19px;
+	font-size: 30px;
 	line-height: inherit;
+}
+
+marquee {
+	padding-top: 20px;
 }
 
 #buildYrs {
@@ -49,13 +63,7 @@ section.sub .columns .title {
 	min-height: 300px;
 }
 
-@media screen and (max-width :1024px) and (min-width :997px) {
-	.rollingText {
-		font-size: 10px !important;
-	}
-}
-
-@media screen and (max-width :767.99px) {
+@media screen and (max-width:830px) {
 	.displej {
 		display: none !important;
 	}
@@ -87,7 +95,6 @@ section.sub .columns .title {
 		display: none !important;
 	}
 	.btnsRight {
-		float: none;
 		padding-right: unset;
 	}
 	.stage-data td.price.small {
@@ -95,5 +102,31 @@ section.sub .columns .title {
 	}
 	#show {
 		font-size: 10px !important;
+	}
+	.da {
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.btnsRight {
+		float: none !important;
+		padding-right: unset;
+	}
+}
+
+@media screen and (min-width:767px) {
+	section.sub .columns .title {
+		margin-left: 0px !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#rollingImg {
+		height: 80px !important;
+		min-width: 80px !important;
+	}
+	.rollingText {
+		font-size: 20px;
 	}
 }
