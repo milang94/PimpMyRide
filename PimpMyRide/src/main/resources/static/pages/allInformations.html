@@ -26,8 +26,8 @@
 				<div>
 					<marquee behavior="scroll" direction="left">
 						<p class="rollingText">
-							<a class="white" href="http://fastch.de/tools">Ist Ihnen der
-								Weg zu weit? -> </a><a href="http://fastch.de/tools"> Hier
+							<a class="white" href="http://fastech.de/tools/">Ist Ihnen
+								der Weg zu weit? -> </a><a href="http://fastech.de/tools/"> Hier
 								geht's zu unserer Selbstprogrammierung - My Genius </a>
 						</p>
 					</marquee>
@@ -72,7 +72,99 @@
 
 	<section class="row main second">
 		<div class="twentyfour columns smalltoppadding"
-			style="width: 66.66%; padding-bottom: 50px;">
+			ng-show="stage2Sel == 'stage sel'">
+			<ul class="block-grid three-up mobile-one-up">
+				<li>
+					<section class="box services">
+						<header class="title">
+							<span class="label">Unsere Qualität</span>
+						</header>
+						<div class="content nopadding mCustomScrollbar _mCS_4">
+							<div class="mCustomScrollBox mCS-light" id="mCSB_4"
+								style="position: relative; height: 100%; overflow: hidden; max-width: 100%;">
+								<div class="mCSB_container" style="position: relative; top: 0;">
+									<div class="inner-big">
+										<ul>
+											<li>Mehrere Messungen auf unserem Prüfstand</li>
+											<li>Individelle Abstimmung auf dem Prüfstand</li>
+											<li>5 Jahre Garantie</li>
+											<li>2 Wochen nicht zufrieden = Geld zurück</li>
+											<li>Ein USB-Stick mit Bildern und Messdiagrammen</li>
+											<li>Probefahrt mit Datenprotokollanalyse</li>
+											<li class="ecolabel">Emissionsstandartwerte werden
+												beibehalten</li>
+										</ul>
+									</div>
+								</div>
+								<div class="mCSB_scrollTools"
+									style="position: absolute; display: block;">
+									<div class="mCSB_draggerContainer">
+										<div class="mCSB_dragger"
+											style="position: absolute; height: 243px; top: 0px;"
+											oncontextmenu="return false;">
+											<div class="mCSB_dragger_bar"
+												style="position: relative; line-height: 243px;"></div>
+										</div>
+										<div class="mCSB_draggerRail"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</li>
+				<li>
+					<section class="box information">
+						<header class="title">
+							<span class="label">Weitere Informationen</span>
+						</header>
+						<div class="content nopadding mCustomScrollbar _mCS_2">
+							<div class="mCustomScrollBox mCS-light" id="mCSB_2"
+								style="position: relative; height: 100%; overflow: hidden; max-width: 100%;">
+								<div class="mCSB_container mCS_no_scrollbar"
+									style="position: relative; top: 0;">
+									<div class="inner-big">
+										<p></p>
+										<p>
+											<span style="text-decoration: underline; line-height: 1.6em;">Stufe
+												2:</span>
+										</p>
+										<p>
+											<span style="color: #0099cc;">- Auspuffanlage mit
+												Sport-Katalysator<br>- <span>Ladeluftkühler</span>&nbsp;<span><span>Performance/Competition</span></span><br>
+												- <span><span>Individuelle Abstimmung der
+														Motorsteuerung auf unserem Allradpruefstand</span></span>
+											</span>
+										</p>
+										<p></p>
+									</div>
+								</div>
+								<div class="mCSB_scrollTools"
+									style="position: absolute; display: none;">
+									<div class="mCSB_draggerContainer">
+										<div class="mCSB_dragger"
+											style="position: absolute; top: 0px;"
+											oncontextmenu="return false;">
+											<div class="mCSB_dragger_bar" style="position: relative;"></div>
+										</div>
+										<div class="mCSB_draggerRail"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</li>
+				<li>
+					<section class="box graph">
+						<div ui-view="graph" autoscroll="false"></div>
+					</section>
+				</li>
+
+			</ul>
+		</div>
+
+		<div class="twentyfour columns smalltoppadding"
+			style="width: 66.66%; padding-bottom: 50px;"
+			ng-hide="stage2Sel == 'stage sel'">
 			<section class="box stage">
 				<header class="title">
 					<span class="label">Unsere Qualit&#228t</span>
@@ -92,7 +184,8 @@
 				</div>
 			</section>
 		</div>
-		<div class="eight columns smalltoppadding noleftpadding">
+		<div class="eight columns smalltoppadding noleftpadding"
+			ng-hide="stage2Sel == 'stage sel'">
 
 			<section class="box graph">
 				<div ui-view="graph" autoscroll="false"></div>
