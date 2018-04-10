@@ -16,6 +16,10 @@ section.box .title .label {
 	text-transform: none;
 }
 
+.st2{
+	color: #e8141e !important;
+}
+
 section.box .title .label {
 	text-transform: none !important ;
 }
